@@ -1,9 +1,11 @@
+import Header from "@/components/header";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
+      <Header />
+      <main className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-3xl flex-col items-center justify-between gap-8 py-20 px-6 text-center bg-white/80 shadow-xl shadow-black/10 transition-colors backdrop-blur-sm dark:bg-zinc-950 sm:items-start sm:text-left sm:px-10 lg:px-16">
         <Image
           className="dark:invert"
           src="/next.svg"
