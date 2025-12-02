@@ -9,14 +9,14 @@ import { BookstoreHeader } from "@/components/projects/bookstore/header";
 
 export default function BookstoreLanding() {
   return (
-    <div className="min-h-screen px-4 py-6 text-foreground dark:bg-zinc-950 sm:px-6">
+    <div className="min-h-screen text-foreground dark:bg-zinc-950">
       <BookstoreHeader />
       <main className="mx-auto flex max-w-6xl flex-col gap-6 py-8">
         <BookstoreHero />
-        {/* <BookstoreBrief />
+        {/* <BookstoreBrief /> */}
         <BookstoreTechStack />
-        <BookstoreWorkflow />
-        <BookstoreLessonLearned /> */}
+        {/* <BookstoreWorkflow /> */}
+        {/* <BookstoreLessonLearned /> */}
       </main>
     </div>
   );

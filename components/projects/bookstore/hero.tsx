@@ -9,15 +9,15 @@ export function BookstoreHero() {
   return (
     <section
       id="hero"
-      className="flex flex-col gap-8 rounded-3xlp-6 shadow-xl shadow-black/10 dark:border-white/10 dark:bg-zinc-950/60 md:grid-cols-2"
+      className="flex flex-col gap-8 rounded-3xl p-6 dark:border-white/10 dark:bg-zinc-950/60 md:grid-cols-2"
     >
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center text-center">
         <div>
-          <h1 className="mt-2 text-3xl font-bold sm:text-4xl text-chart-1 text-shadow-accent-foreground">
+          <h1 className="mt-2 text-3xl font-bold sm:text-4xl text-shadow-accent-foreground">
             Full-Stack Online Bookstore Platform
           </h1>
         </div>
-        <p className="text-white">
+        <p className="text-lg">
           A production-style eCommerce system built with Next.js, NestJS,
           TypeScript, and React Native.
         </p>
@@ -25,16 +25,16 @@ export function BookstoreHero() {
           {stackItems.map((item) => (
             <span
               key={item}
-              className="rounded-full border border-border bg-background/60 px-2 py-1 dark:border-white/10 dark:bg-white/5"
+              className="rounded-full border bg-white px-2 py-1 dark:border-white/10 dark:bg-white/5"
             >
               {item}
             </span>
           ))}
         </div>
         <div className="flex flex-wrap gap-3">
-          <Button size="lg">Storefront</Button>
-          <Button size="lg" variant="outline">
-            Dashboard
+          <Button size="lg">View Storefront</Button>
+          <Button size="lg" variant="orange">
+            View Dashboard
           </Button>
         </div>
 
@@ -47,7 +47,7 @@ export function BookstoreHero() {
       </div>
       <div className="flex items-center justify-center">
         <div className="relative h-72 w-full overflow-hidden rounded-3xl border border-border bg-muted/10 dark:border-white/10">
-          <div className="absolute inset-0 bg-gradient-to-br from-foreground/20 via-transparent to-foreground/10" />
+          <div className="absolute inset-0 bg-linear-to-br from-foreground/20 via-transparent to-foreground/10" />
           <p className="relative z-10 text-sm font-semibold uppercase text-muted-foreground">
             Screen preview
           </p>

@@ -1,0 +1,47 @@
+[
+  {
+    "component": "Frontend Platform",
+    "technologies": "Next.js (App Router)",
+    "rationale": "Next.js App Router handles SSR/SSG/ISR plus Server Actions untuk alur data langsung dari UI, memastikan dashboard responsif dan SEO-friendly."
+  },
+  {
+    "component": "Frontend Styling",
+    "technologies": "Tailwind CSS ",
+    "rationale": "Tailwind menyediakan token warna/spacing terpusat dan utilities untuk responsivitas cepat, menjaga konsistensi desain tanpa menulis banyak CSS custom."
+  },
+  {
+    "component": "Component Library",
+    "technologies": "Shadcn/UI (Radix-powered primitives)",
+    "rationale": "Shadcn/UI membungkus primitives Radix yang sudah accessible, mempercepat prototyping dashboard production-ready dengan komponen siap pakai."
+  },
+  {
+    "component": "Mobile App Framework",
+    "technologies": "Expo React Native",
+    "rationale": "Expo memungkinkan pengembangan cross-platform dari satu codebase dengan build pipeline dan OTA updates yang terintegrasi."
+  },
+  {
+    "component": "Mobile Styling",
+    "technologies": "Nativewind",
+    "rationale": "Nativewind membawa utility Tailwind ke React Native, menjaga konsistensi styling antara web dan mobile."
+  },
+  {
+    "component": "Mobile Storage",
+    "technologies": "MMKV",
+    "rationale": "MMKV dipilih sebagai storage cache berperforma tinggi untuk menyimpan sesi pengguna dan token."
+  },
+  {
+    "component": "Backend API",
+    "technologies": "NestJS (TypeScript), Zod",
+    "rationale": "NestJS untuk API scalable dan modular dengan arsitektur MVC/Modul, sementara Zod menjamin validasi payload type-safe di seluruh lapisan."
+  },
+  {
+    "component": "Database/ORM",
+    "technologies": "MySQL, Drizzle ORM",
+    "rationale": "MySQL untuk keandalan OLTP, Drizzle sebagai ORM type-safe yang ringan, menunjukkan pemilihan tool modern yang optimal."
+  },
+  {
+    "component": "State Management",
+    "technologies": "React Query, Zustand",
+    "rationale": "React Query mengelola caching dan sinkronisasi data server, dan Zustand menyimpan state UI lokal secara minimalis."
+  }
+]
