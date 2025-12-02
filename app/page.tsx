@@ -1,7 +1,6 @@
 import Header from "@/components/header";
 import CaseStudyProjects from "@/components/home/case-study-projects";
 import { CoreTechStack } from "@/components/home/core-tech-stack";
-import { Experience } from "@/components/home/experience";
 import { Hero } from "@/components/home/hero";
 
 export default function Home() {
