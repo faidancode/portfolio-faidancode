@@ -1,0 +1,67 @@
+[
+  {
+    "name": "React",
+    "logo": "/images/logo/logo_react_js.png"
+  },
+  {
+    "name": "React Native",
+    "logo": "/images/logo/logo_react_native.png"
+  },
+  {
+    "name": "Next.js",
+    "logo": "/images/logo/logo_next.png"
+  },
+  {
+    "name": "Node.js",
+    "logo": "/images/logo/logo_node.png"
+  },
+  {
+    "name": "TypeScript",
+    "logo": "/images/logo/logo_ts.png"
+  },
+  
+  {
+    "name": "NestJS",
+    "logo": "/images/logo/logo_nest.png"
+  },
+  {
+    "name": "Angular",
+    "logo": "/images/logo/logo_angular.png"
+  },
+  {
+    "name": "Vue",
+    "logo": "/images/logo/logo_vue.png"
+  },
+  {
+    "name": "CodeIgniter",
+    "logo": "/images/logo/logo_codeigniter.png"
+  },
+  {
+    "name": "Laravel",
+    "logo": "/images/logo/logo_laravel.png"
+  },
+   {
+    "name": "Capacitor",
+    "logo": "/images/logo/logo_capacitor.png"
+  },
+  {
+    "name": "Android Studio",
+    "logo": "/images/logo/logo_android_studio.png"
+  },
+  {
+    "name": "Drizzle",
+    "logo": "/images/logo/logo_drizzle.png"
+  },
+  {
+    "name": "Tailwind",
+    "logo": "/images/logo/logo_tailwind.png"
+  },
+  {
+    "name": "Bootstrap",
+    "logo": "/images/logo/logo_bootstrap.png"
+  },
+  {
+    "name": "GitHub",
+    "logo": "/images/logo/logo_github.png"
+  }
+]

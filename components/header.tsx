@@ -31,7 +31,7 @@ export default function Header() {
   const [sheetOpen, setSheetOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border bg-background/80 shadow-sm shadow-black/5 backdrop-blur">
+    <header className="sticky top-0 z-50 w-full border-b border-border bg-white dark:bg-black shadow-sm shadow-black/5 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-6">
         <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
           <SheetTrigger asChild>
