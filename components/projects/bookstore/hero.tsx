@@ -3,25 +3,25 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 
-const stackItems = ["NestJS", "Next.js", "Drizzle", "React Native"];
+const stackItems = ["NestJS", "NextJS", "React Native", "Typesccript", "Drizzle", "Tailwind"];
 
 export function BookstoreHero() {
   return (
     <section
       id="hero"
-      className="flex flex-col gap-8 rounded-3xl p-6 dark:border-white/10 dark:bg-zinc-950/60 md:grid-cols-2"
+      className="flex flex-col gap-8 rounded-3xl p-6 dark:border-white/10 dark:bg-[#0c1026] md:grid-cols-2"
     >
       <div className="flex flex-col gap-4 items-center text-center">
         <div>
-          <h1 className="mt-2 text-3xl font-bold sm:text-4xl text-shadow-accent-foreground">
+          <h1 className="mt-2 text-4xl font-bold sm:text-4xl text-shadow-accent-foreground dark:text-[#ff5b35]">
             Full-Stack Online Bookstore Platform
           </h1>
         </div>
-        <p className="text-lg">
-          A production-style eCommerce system built with Next.js, NestJS,
-          TypeScript, and React Native.
+        <p className="text-xl">
+          A production-style eCommerce system built with NextJS, NestJS,
+          TypeScript and React Native.
         </p>
-        <div className="flex flex-wrap gap-2 text-xs uppercase text-foreground">
+        <div className="flex flex-wrap justify-center gap-2 text-xs uppercase text-foreground">
           {stackItems.map((item) => (
             <span
               key={item}
@@ -46,12 +46,14 @@ export function BookstoreHero() {
         />
       </div>
       <div className="flex items-center justify-center">
-        <div className="relative h-72 w-full overflow-hidden rounded-3xl border border-border bg-muted/10 dark:border-white/10">
-          <div className="absolute inset-0 bg-linear-to-br from-foreground/20 via-transparent to-foreground/10" />
-          <p className="relative z-10 text-sm font-semibold uppercase text-muted-foreground">
-            Screen preview
-          </p>
-        </div>
+        {/* <div className="absolute inset-0 bg-linear-to-br from-foreground/20 via-transparent to-foreground/10 rounded-3xl"/> */}
+        <Image
+          alt="app-screenshoot"
+          width={800}
+          height={500}
+          src="https://res.cloudinary.com/dersjymlc/image/upload/v1764826073/faibook-screenshoot_y7alee.png"
+          className="rounded-t-4xl"
+        />
       </div>
     </section>
   );

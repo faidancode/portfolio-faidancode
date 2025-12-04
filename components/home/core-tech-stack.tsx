@@ -13,7 +13,7 @@ const techStackData = techStack as TechStackItem[];
 
 export function CoreTechStack() {
   return (
-    <section className="flex flex-col gap-4 w-full p-2 transition dark:bg-zinc-950/40">
+    <section className="flex flex-col gap-4 w-full p-4 transition dark:bg-zinc-950/40">
       <div className="mb-4 flex flex-col gap-1 text-left">
         <h2 className="text-2xl font-bold text-foreground">
           Core Technologies Stack

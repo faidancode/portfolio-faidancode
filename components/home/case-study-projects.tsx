@@ -3,11 +3,13 @@
 import Image from "next/image";
 
 import caseStudies from "@/data/case-study-projects.json";
+import Link from "next/link";
 
 type CaseStudy = {
   name: string;
   description: string;
   image: string;
+  url: string;
   stack: string[];
 };
 
@@ -15,15 +17,16 @@ const caseStudyData = caseStudies as CaseStudy[];
 
 export default function CaseStudyProjects() {
   return (
-    <section className="flex flex-col gap-4 w-full">
+    <section className="flex flex-col gap-4 w-full p-4">
       <div className="mb-4 flex flex-col gap-1 text-left">
         <h2 className="text-2xl font-bold text-foreground">Case Studies</h2>
         <p className="text-sm text-muted-foreground">
           Realistic, end-to-end projects showcasing my full-stack approach.
         </p>
       </div>
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {caseStudyData.map((caseStudy) => (
+         <Link href={caseStudy.url}>
           <article
             key={caseStudy.name}
             className="rounded-2xl bg-white p-4 text-left border dark:border-white/10 dark:bg-white/5">
@@ -35,7 +38,7 @@ export default function CaseStudyProjects() {
                 className="object-cover"
               />
             </div>
-            <p className="text-sm font-semibold uppercase tracking-[0.2em]">
+            <p className="font-semibold uppercase tracking-wildest">
               {caseStudy.name}
             </p>
             <p className="text-sm text-foreground/80">
@@ -52,6 +55,7 @@ export default function CaseStudyProjects() {
               ))}
             </div>
           </article>
+         </Link>
         ))}
       </div>
     </section>

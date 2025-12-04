@@ -1,20 +1,9 @@
 [
   {
-    "name": "Project Dashboard Bookstore",
-    "description": "Dasbor analitik untuk toko buku online.",
-    "image": "/images/case-study/case1.jpg",
-    "stack": ["React", "Laravel", "Tailwind"]
-  },
-  {
-    "name": "Web Order Food",
-    "description": "Platform pemesanan makanan real-time.",
-    "image": "/images/case-study/case2.jpg",
-    "stack": ["Next.js", "Laravel", "Tailwind"]
-  },
-  {
-    "name": "Web LMS",
-    "description": "Learning management system dengan resume pengguna.",
-    "image": "/images/case-study/case3.jpg",
-    "stack": ["Next.js", "TypeScript", "Tailwind"]
+    "name": "Bookstore Web and Application",
+    "description": "Full-Stack E-commerce: Web Store, Admin Dashboard, & Mobile App..",
+    "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1764826073/faibook-screenshoot_y7alee.png",
+    "stack": ["NestJS", "Next", "React Native", "TypeScript", "Tailwind", "Drizzle"],
+    "url": "/projects/bookstore"
   }
 ]

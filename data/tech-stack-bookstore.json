@@ -2,46 +2,46 @@
   {
     "component": "Frontend Platform",
     "technologies": "Next.js (App Router)",
-    "rationale": "Next.js App Router handles SSR/SSG/ISR plus Server Actions untuk alur data langsung dari UI, memastikan dashboard responsif dan SEO-friendly."
+    "rationale": "Next.js App Router combines file-based routing, shared layouts, and Server Actions so the UI, data mutations, and SEO-friendly pages stay cohesive without extra wiring."
   },
   {
     "component": "Frontend Styling",
     "technologies": "Tailwind CSS ",
-    "rationale": "Tailwind menyediakan token warna/spacing terpusat dan utilities untuk responsivitas cepat, menjaga konsistensi desain tanpa menulis banyak CSS custom."
+    "rationale": "Tailwind centralizes design tokens and utilities for fast responsive layouts, keeping styles consistent without heavy custom CSS."
   },
   {
     "component": "Component Library",
-    "technologies": "Shadcn/UI (Radix-powered primitives)",
-    "rationale": "Shadcn/UI membungkus primitives Radix yang sudah accessible, mempercepat prototyping dashboard production-ready dengan komponen siap pakai."
+    "technologies": "Shadcn",
+    "rationale": "Shadcn/UI wraps Radix primitives with accessible defaults, speeding up production-ready prototyping with composable components."
   },
   {
     "component": "Mobile App Framework",
     "technologies": "Expo React Native",
-    "rationale": "Expo memungkinkan pengembangan cross-platform dari satu codebase dengan build pipeline dan OTA updates yang terintegrasi."
+    "rationale": "Expo supports cross-platform development from one codebase with integrated tooling, OTA updates, and easy device testing."
   },
   {
     "component": "Mobile Styling",
     "technologies": "Nativewind",
-    "rationale": "Nativewind membawa utility Tailwind ke React Native, menjaga konsistensi styling antara web dan mobile."
+    "rationale": "Nativewind brings Tailwind-style utilities to React Native to keep styling consistent between web and mobile."
   },
   {
     "component": "Mobile Storage",
     "technologies": "MMKV",
-    "rationale": "MMKV dipilih sebagai storage cache berperforma tinggi untuk menyimpan sesi pengguna dan token."
+    "rationale": "MMKV is a high-performance key-value store for caching user sessions and tokens on device."
   },
   {
     "component": "Backend API",
     "technologies": "NestJS (TypeScript), Zod",
-    "rationale": "NestJS untuk API scalable dan modular dengan arsitektur MVC/Modul, sementara Zod menjamin validasi payload type-safe di seluruh lapisan."
+    "rationale": "NestJS provides a modular, testable API structure, while Zod enforces type-safe validation across request and response contracts."
   },
   {
     "component": "Database/ORM",
     "technologies": "MySQL, Drizzle ORM",
-    "rationale": "MySQL untuk keandalan OLTP, Drizzle sebagai ORM type-safe yang ringan, menunjukkan pemilihan tool modern yang optimal."
+    "rationale": "MySQL delivers reliable OLTP storage, and Drizzle ORM offers a lightweight, type-safe query layer."
   },
   {
     "component": "State Management",
     "technologies": "React Query, Zustand",
-    "rationale": "React Query mengelola caching dan sinkronisasi data server, dan Zustand menyimpan state UI lokal secara minimalis."
+    "rationale": "React Query manages server-state caching and synchronization, while Zustand keeps local UI state minimal and predictable."
   }
 ]
