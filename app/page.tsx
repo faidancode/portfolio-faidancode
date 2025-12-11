@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="mx-auto bg-background w-full flex-1  flex flex-col pb-6 lg:pb-0">
       <Header />
-      <main className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-6xl flex-col items-center justify-between gap-10 text-center bg-background  dark:bg-zinc-950 sm:items-start sm:text-left sm:px-10">
+      <main className="mx-auto flex min-h-[calc(100vh-6rem)] w-full max-w-6xl flex-col items-center justify-between gap-10 text-center bg-background  dark:bg-zinc-950 sm:items-start sm:text-left">
         <Hero />
         <CoreTechStack />
         <CaseStudyProjects />

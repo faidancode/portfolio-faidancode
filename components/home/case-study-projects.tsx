@@ -17,7 +17,7 @@ const caseStudyData = caseStudies as CaseStudy[];
 
 export default function CaseStudyProjects() {
   return (
-    <section className="flex flex-col gap-4 w-full p-4">
+    <section className="flex flex-col gap-4 w-full p-6" id="caseStudy">
       <div className="mb-4 flex flex-col gap-1 text-left">
         <h2 className="text-2xl font-bold text-foreground">Case Studies</h2>
         <p className="text-sm text-muted-foreground">
@@ -26,7 +26,7 @@ export default function CaseStudyProjects() {
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {caseStudyData.map((caseStudy) => (
-         <Link href={caseStudy.url}>
+         <Link href={caseStudy.url} key={caseStudy.url}>
           <article
             key={caseStudy.name}
             className="rounded-2xl bg-white p-4 text-left border dark:border-white/10 dark:bg-white/5">

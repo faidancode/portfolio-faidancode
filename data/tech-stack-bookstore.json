@@ -31,17 +31,32 @@
   },
   {
     "component": "Backend API",
-    "technologies": "NestJS (TypeScript), Zod",
+    "technologies": "NestJS",
     "rationale": "NestJS provides a modular, testable API structure, while Zod enforces type-safe validation across request and response contracts."
   },
   {
-    "component": "Database/ORM",
-    "technologies": "MySQL, Drizzle ORM",
-    "rationale": "MySQL delivers reliable OLTP storage, and Drizzle ORM offers a lightweight, type-safe query layer."
+    "component": "Validation Library",
+    "technologies": "Zod",
+    "rationale": "Zod enforces type-safe validation across request and response contracts."
   },
   {
-    "component": "State Management",
-    "technologies": "React Query, Zustand",
-    "rationale": "React Query manages server-state caching and synchronization, while Zustand keeps local UI state minimal and predictable."
+    "component": "Database",
+    "technologies": "MySQL",
+    "rationale": "MySQL delivers reliable OLTP storage."
+  },
+  {
+    "component": "ORM",
+    "technologies": "Drizzle ORM",
+    "rationale": "Drizzle ORM offers a lightweight, type-safe query layer."
+  },
+  {
+    "component": "Server State Management",
+    "technologies": "React Query",
+    "rationale": "React Query manages server-state caching and synchronization."
+  },
+  {
+    "component": "UI State Management",
+    "technologies": "Zustand",
+    "rationale": "Zustand keeps local UI state minimal and predictable."
   }
 ]

@@ -14,17 +14,17 @@ import { ThemeMenuToggle } from "./theme-menu-toggle";
 
 const navLinks = [
   { label: "Home", href: "#home" },
-  { label: "Projects", href: "#projects" },
-  { label: "Blog", href: "#blog" },
-  { label: "Contact", href: "#contact" },
+  { label: "Stack", href: "#stack" },
+  { label: "Case Study", href: "#caseStudy" },
 ];
 
 export default function Header() {
   const [sheetOpen, setSheetOpen] = useState(false);
+  const appName = process.env.PUBLIC_NEXT_APP_NAME || "Faidancode";
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-white dark:bg-black shadow-sm shadow-black/5 backdrop-blur">
-      <div className="mx-auto flex w-full max-w-6xl items-center gap-3 px-4 py-3 sm:px-12">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 text-sm uppercase tracking-widest">
         <Sheet open={sheetOpen} onOpenChange={setSheetOpen}>
           <SheetTrigger asChild>
             <button
@@ -57,8 +57,8 @@ export default function Header() {
           </SheetContent>
         </Sheet>
 
-        <span className="flex-1 text-center font-semibold uppercase tracking-[0.4em] text-foreground sm:flex-none sm:text-left">
-          faidancode
+        <span className="font-bold uppercase tracking-wider text-foreground sm:flex-none sm:text-left">
+          {appName}
         </span>
 
         <nav
