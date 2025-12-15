@@ -2,8 +2,8 @@
   {
     "name": "Bookstore Web and Application",
     "description": "Full-Stack E-commerce: Web Store, Admin Dashboard, & Mobile App..",
-    "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1764826073/faibook-screenshoot_y7alee.png",
-    "stack": ["NestJS", "Next", "React Native", "TypeScript", "Tailwind", "Drizzle"],
+    "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
+    "stack": ["NestJS", "Next", "TypeScript", "Tailwind", "Drizzle"],
     "url": "/projects/bookstore"
   }
 ]

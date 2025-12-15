@@ -15,6 +15,21 @@
     "rationale": "Shadcn/UI wraps Radix primitives with accessible defaults, speeding up production-ready prototyping with composable components."
   },
   {
+    "component": "Mobile App Framework",
+    "technologies": "Expo React Native",
+    "rationale": "Expo supports cross-platform development from one codebase with integrated tooling, OTA updates, and easy device testing."
+  },
+  {
+    "component": "Mobile Styling",
+    "technologies": "Nativewind",
+    "rationale": "Nativewind brings Tailwind-style utilities to React Native to keep styling consistent between web and mobile."
+  },
+  {
+    "component": "Mobile Storage",
+    "technologies": "MMKV",
+    "rationale": "MMKV is a high-performance key-value store for caching user sessions and tokens on device."
+  },
+  {
     "component": "Backend API",
     "technologies": "NestJS",
     "rationale": "NestJS provides a modular, testable API structure, while Zod enforces type-safe validation across request and response contracts."

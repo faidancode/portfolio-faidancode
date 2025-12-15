@@ -1,9 +1,16 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Link } from "lucide-react";
 import Image from "next/image";
 
-const stackItems = ["NestJS", "NextJS", "React Native", "Typesccript", "Drizzle", "Tailwind"];
+const stackItems = [
+  "NestJS",
+  "NextJS",
+  "Typesccript",
+  "Drizzle",
+  "Tailwind",
+];
 
 export function BookstoreHero() {
   return (
@@ -18,8 +25,8 @@ export function BookstoreHero() {
           </h1>
         </div>
         <p className="text-xl">
-          A production-style eCommerce system built with NextJS, NestJS,
-          TypeScript and React Native.
+          A production-style eCommerce system built with NestJS,
+          TypeScript and NextJS.
         </p>
         <div className="flex flex-wrap justify-center gap-2 text-xs uppercase text-foreground">
           {stackItems.map((item) => (
@@ -32,9 +39,23 @@ export function BookstoreHero() {
           ))}
         </div>
         <div className="flex flex-wrap gap-3">
-          <Button size="lg">View Storefront</Button>
+          <Button asChild size="lg">
+            <a
+              href="https://next-faibook.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Storefront
+            </a>
+          </Button>
           <Button size="lg" variant="orange">
-            View Dashboard
+            <a
+              href="https://next-admin-faibook.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Admin Dashboarad
+            </a>
           </Button>
         </div>
 
@@ -51,8 +72,8 @@ export function BookstoreHero() {
           alt="app-screenshoot"
           width={800}
           height={500}
-          src="https://res.cloudinary.com/dersjymlc/image/upload/v1764826073/faibook-screenshoot_y7alee.png"
-          className="rounded-t-4xl"
+          src="https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg"
+          className="rounded-t-3xl border border-gray-700"
         />
       </div>
     </section>
