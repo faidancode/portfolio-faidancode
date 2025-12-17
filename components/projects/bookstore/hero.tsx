@@ -12,7 +12,7 @@ const stackItems = [
   "Tailwind",
 ];
 
-export function BookstoreHero() {
+export function ProjectHero() {
   return (
     <section
       id="hero"

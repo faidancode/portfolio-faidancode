@@ -1,0 +1,31 @@
+{
+  "title1": "What I’d Improve",
+  "title2": "If This Were Production",
+  "subtitle": "Planned improvements and architectural enhancements for a real-world, large-scale deployment.",
+  "data": [
+    {
+      "item": "Background Jobs for Async Tasks",
+      "description": "Move non-critical tasks such as email notifications, invoice generation, and webhook callbacks to background jobs to improve API responsiveness and reliability."
+    },
+    {
+      "item": "Redis Caching Layer",
+      "description": "Introduce Redis to cache frequently accessed data such as product catalogs and configuration to reduce database load and improve response times."
+    },
+    {
+      "item": "Message Queue for Order Processing",
+      "description": "Use a message queue to decouple order creation, payment confirmation, and inventory updates, improving fault tolerance and scalability."
+    },
+    {
+      "item": "Shipping Provider Integration",
+      "description": "Integrate with third-party shipping services to enable real-time shipment tracking and delivery status updates for customers."
+    },
+    {
+      "item": "Centralized Observability",
+      "description": "Add structured logging, metrics, and tracing to gain better visibility into system behavior and simplify debugging in production."
+    },
+    {
+      "item": "Audit Logs for Sensitive Actions",
+      "description": "Record audit logs for critical actions such as stock adjustments, order cancellations, and admin changes to ensure traceability."
+    }
+  ]
+}

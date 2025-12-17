@@ -1,0 +1,52 @@
+{
+  "title1": "Teknologi",
+  "title2": "Inti",
+  "subtitle": "Kumpulan teknologi inti yang dipilih untuk mendukung skalabilitas, kemudahan perawatan, dan pengalaman pengembangan yang baik.",
+  "data": [
+    {
+      "component": "Platform Frontend",
+      "technologies": "Next.js (App Router)",
+      "rationale": "Next.js App Router menyediakan kerangka kerja terpadu untuk routing, layout, server rendering, dan data mutation. Pendekatan ini memungkinkan pembuatan halaman yang SEO-friendly sekaligus menjaga logika UI dan data tetap kohesif, sehingga mengurangi boilerplate dan meningkatkan maintainability jangka panjang."
+    },
+    {
+      "component": "Styling Frontend",
+      "technologies": "Tailwind CSS",
+      "rationale": "Tailwind CSS menerapkan pendekatan utility-first dengan design token yang terpusat, memungkinkan iterasi UI yang cepat sekaligus menjaga konsistensi visual tanpa kompleksitas file CSS kustom yang besar."
+    },
+    {
+      "component": "Component Library",
+      "technologies": "Shadcn/UI",
+      "rationale": "Shadcn/UI dibangun di atas Radix primitives untuk menyediakan komponen yang aksesibel dan composable, tanpa mengunci proyek pada design system yang kaku, sehingga tetap fleksibel dan memberikan kontrol penuh terhadap styling."
+    },
+    {
+      "component": "Framework Backend API",
+      "technologies": "NestJS",
+      "rationale": "NestJS mendorong arsitektur modular berbasis domain yang mudah diskalakan seiring pertumbuhan codebase. Dependency injection dan pemisahan tanggung jawab yang jelas membuat sistem lebih mudah diuji, dikembangkan, dan dirawat."
+    },
+    {
+      "component": "Validasi & Keamanan Tipe",
+      "technologies": "Zod",
+      "rationale": "Zod memastikan validasi runtime yang selaras dengan tipe TypeScript, sehingga meminimalkan data tidak valid di boundary sistem dan membuat validasi request, response, serta domain menjadi eksplisit dan andal."
+    },
+    {
+      "component": "Database",
+      "technologies": "MySQL",
+      "rationale": "MySQL merupakan database relasional yang telah terbukti andal untuk beban kerja transaksional seperti order dan inventory, dengan jaminan konsistensi data yang kuat serta performa yang stabil."
+    },
+    {
+      "component": "ORM / Query Layer",
+      "technologies": "Drizzle ORM",
+      "rationale": "Drizzle ORM menawarkan pendekatan SQL-first yang ringan dan type-safe, menjaga query tetap eksplisit serta menghindari overhead dan abstraksi tersembunyi yang sering ditemukan pada ORM yang lebih berat."
+    },
+    {
+      "component": "Manajemen Server State",
+      "technologies": "React Query",
+      "rationale": "React Query menangani caching server-state, sinkronisasi data, dan background refetching, sehingga mengurangi logika data-fetching manual dan memastikan konsistensi antara UI dan state backend."
+    },
+    {
+      "component": "Manajemen UI State Client",
+      "technologies": "Zustand",
+      "rationale": "Zustand menyediakan solusi state management yang minimal dan mudah diprediksi untuk state UI lokal, menjaga kompleksitas tetap rendah dan logika state mudah dipahami."
+    }
+  ]
+}

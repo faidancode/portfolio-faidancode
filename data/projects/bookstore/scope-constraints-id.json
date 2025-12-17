@@ -1,0 +1,32 @@
+{
+  "title1": "Ruang Lingkup &",
+  "title2": "Batasan",
+  "subtitle": "Batasan dan kebutuhan utama yang menjadi dasar dalam pengambilan keputusan teknis.",
+  "data": [
+    {
+      "type": "User Scope",
+      "title": "Target Pengguna",
+      "description": "Sistem ditujukan untuk dua kelompok pengguna utama: customer yang melakukan pencarian dan pembelian buku, serta admin yang mengelola produk, stok, dan pesanan."
+    },
+    {
+      "type": "Scalability",
+      "title": "Arsitektur yang Skalabel",
+      "description": "Sistem harus mampu mendukung pertumbuhan jumlah pengguna, katalog produk, dan volume transaksi tanpa memerlukan perubahan arsitektur besar."
+    },
+    {
+      "type": "Data Integrity",
+      "title": "Konsistensi Stok",
+      "description": "Jumlah stok harus tetap konsisten meskipun terjadi operasi secara bersamaan, untuk mencegah overselling dan memastikan keandalan proses pemesanan."
+    },
+    {
+      "type": "Security",
+      "title": "Autentikasi Berbasis Role",
+      "description": "Autentikasi dan otorisasi diterapkan berbasis role, sehingga hak akses antara customer dan admin terpisah dengan jelas."
+    },
+    {
+      "type": "Integration",
+      "title": "Integrasi Payment Gateway",
+      "description": "Sistem terintegrasi dengan Midtrans untuk menangani proses pembayaran secara aman dan mengikuti alur pembayaran standar."
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "title1": "Scope &",
+  "title2": "Constraints",
+  "subtitle": "Defined boundaries and non-negotiable requirements that shape the system design.",
+  "data": [
+    {
+      "type": "User Scope",
+      "title": "Target Users",
+      "description": "The system serves two primary user groups: customers who browse and purchase books, and administrators who manage products, inventory, and orders."
+    },
+    {
+      "type": "Scalability",
+      "title": "Scalable Architecture",
+      "description": "The system must support future growth in traffic, product catalog size, and order volume without requiring major architectural changes."
+    },
+    {
+      "type": "Data Integrity",
+      "title": "Stock Consistency",
+      "description": "Inventory levels must remain consistent across concurrent operations to prevent overselling and ensure reliable order fulfillment."
+    },
+    {
+      "type": "Security",
+      "title": "Role-Based Authentication",
+      "description": "Authentication and authorization must be role-based, ensuring that customers and administrators have clearly separated access and permissions."
+    },
+    {
+      "type": "Integration",
+      "title": "Payment Gateway",
+      "description": "The system integrates with Midtrans to handle online payments securely and reliably, following standard payment flow best practices."
+    }
+  ]
+}

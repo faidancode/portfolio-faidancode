@@ -1,0 +1,52 @@
+{
+  "title1": "Tech",
+  "title2": "Stack",
+  "subtitle": "A curated set of technologies chosen to balance scalability, maintainability, and developer experience.",
+  "data": [
+    {
+      "component": "Frontend Platform",
+      "technologies": "Next.js (App Router)",
+      "rationale": "Next.js App Router provides a unified framework for routing, layouts, server rendering, and data mutations. It allows building SEO-friendly pages while keeping UI and data logic cohesive, reducing boilerplate and improving long-term maintainability."
+    },
+    {
+      "component": "Frontend Styling",
+      "technologies": "Tailwind CSS",
+      "rationale": "Tailwind CSS enables utility-first styling with centralized design tokens, allowing rapid UI iteration while maintaining visual consistency and avoiding the complexity of large custom CSS files."
+    },
+    {
+      "component": "Component Library",
+      "technologies": "Shadcn/UI",
+      "rationale": "Shadcn/UI builds on Radix primitives to provide accessible, composable components without locking the project into a rigid design system, offering flexibility and full control over styling."
+    },
+    {
+      "component": "Backend API Framework",
+      "technologies": "NestJS",
+      "rationale": "NestJS enforces a modular, domain-oriented architecture that scales well as the codebase grows. Its dependency injection and clear separation of concerns make the system easier to test, extend, and maintain."
+    },
+    {
+      "component": "Validation & Type Safety",
+      "technologies": "Zod",
+      "rationale": "Zod ensures runtime validation aligned with TypeScript types, reducing invalid data at system boundaries and making request, response, and domain validation explicit and reliable."
+    },
+    {
+      "component": "Database",
+      "technologies": "MySQL",
+      "rationale": "MySQL is a proven relational database well-suited for transactional workloads such as orders and inventory, providing strong consistency guarantees and predictable performance."
+    },
+    {
+      "component": "ORM / Query Layer",
+      "technologies": "Drizzle ORM",
+      "rationale": "Drizzle ORM offers a lightweight, type-safe SQL-first approach that keeps queries explicit while avoiding the overhead and hidden abstractions common in heavier ORMs."
+    },
+    {
+      "component": "Server State Management",
+      "technologies": "React Query",
+      "rationale": "React Query handles server-state caching, synchronization, and background refetching, reducing manual data-fetching logic and ensuring UI consistency with backend state."
+    },
+    {
+      "component": "Client UI State Management",
+      "technologies": "Zustand",
+      "rationale": "Zustand provides a minimal and predictable state management solution for local UI state, avoiding unnecessary complexity while keeping state logic easy to reason about."
+    }
+  ]
+}
