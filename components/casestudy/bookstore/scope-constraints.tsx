@@ -1,5 +1,6 @@
 "use client";
 
+import Section from "@/components/section";
 import { Title } from "@/components/title";
 import {
   Accordion,
@@ -17,12 +18,9 @@ export default function ProjectScopeConstraints({
   data,
 }: ProjectScopeConstraintsProps) {
   return (
-    <section className="flex flex-col gap-4 w-full px-6" id="scope-constraints">
+    <Section id="scope-constraints">
       {/* Header */}
-      <div className="flex flex-col gap-1">
-        <Title text1={data.title1} text2={data.title2} />
-        <p className="text-sm text-muted-foreground">{data.subtitle}</p>
-      </div>
+      <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
 
       {/* Accordion */}
       <Accordion
@@ -43,6 +41,6 @@ export default function ProjectScopeConstraints({
           </AccordionItem>
         ))}
       </Accordion>
-    </section>
+    </Section>
   );
 }

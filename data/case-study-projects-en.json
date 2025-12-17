@@ -1,9 +1,0 @@
-[
-  {
-    "name": "Online Bookstore & Admin Dashboard",
-    "description": "Sistem end-to-end yang mencakup katalog produk, manajemen inventaris, pengelolaan pesanan, serta operasi administratif.",
-    "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
-    "stack": ["NestJS", "Next", "TypeScript", "Tailwind", "Drizzle"],
-    "url": "en/projects/bookstore"
-  }
-]

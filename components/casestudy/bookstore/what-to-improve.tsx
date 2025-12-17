@@ -1,5 +1,6 @@
 "use client";
 
+import Section from "@/components/section";
 import { Title } from "@/components/title";
 import {
   Accordion,
@@ -15,12 +16,9 @@ interface WhatToImproveProps {
 
 export default function ProjectWhatToImprove({ data }: WhatToImproveProps) {
   return (
-    <section className="flex flex-col gap-4 w-full px-6" id="improvements">
+    <Section id="improvements">
       {/* Header */}
-      <div className="flex flex-col gap-1">
-        <Title text1={data.title1} text2={data.title2} />
-        <p className="text-sm text-muted-foreground">{data.subtitle}</p>
-      </div>
+      <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
 
       {/* Accordion */}
       <Accordion
@@ -39,6 +37,6 @@ export default function ProjectWhatToImprove({ data }: WhatToImproveProps) {
           </AccordionItem>
         ))}
       </Accordion>
-    </section>
+    </Section>
   );
 }

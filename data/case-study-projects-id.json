@@ -1,9 +1,0 @@
-[
-  {
-    "name": "Online Book Storesssss",
-    "description": "BAHASA -Stack Online Book Store: Web Store and Admin Dashboard",
-    "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
-    "stack": ["NestJS", "Next", "TypeScript", "Tailwind", "Drizzle"],
-    "url": "id/projects/bookstore"
-  }
-]

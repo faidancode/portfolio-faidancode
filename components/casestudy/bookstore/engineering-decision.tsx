@@ -1,5 +1,6 @@
 "use client";
 
+import Section from "@/components/section";
 import { Title } from "@/components/title";
 import { EngineeringDecisionData } from "@/lib/types/engineering-decisions";
 
@@ -11,14 +12,8 @@ export function ProjectEngineeringDecision({
   data,
 }: EngineeringDecisionsProps) {
   return (
-    <section
-      id="engineering-decisions"
-      className="flex flex-col gap-4 rounded-3xl bg-background/80 p-6 dark:border-white/10 dark:bg-[#0c1026]"
-    >
-      <div className="flex flex-col gap-1">
-        <Title text1={data.title1} text2={data.title2} />
-        <p className="text-sm text-muted-foreground">{data.subtitle}</p>
-      </div>
+    <Section id="engineering-decisions">
+      <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-2">
         {data.data.map((entry) => (
           <article
@@ -32,6 +27,6 @@ export function ProjectEngineeringDecision({
           </article>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

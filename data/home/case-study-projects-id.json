@@ -1,0 +1,14 @@
+{
+  "title1": "Studi",
+  "title2": "Kasus",
+  "subtitle": "Studi Kasus Proyek end-to-end yang merepresentasikan pendekatan full-stack saya dalam membangun aplikasi siap produksi.",
+  "data": [
+    {
+      "name": "Online Book Store",
+      "description": "Sistem end-to-end yang mencakup katalog produk, manajemen inventaris, siklus hidup pesanan, serta operasional admin.",
+      "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
+      "stack": ["NestJS", "NextJS", "TypeScript", "Tailwind", "Drizzle"],
+      "url": "id/casestudy/bookstore"
+    }
+  ]
+}

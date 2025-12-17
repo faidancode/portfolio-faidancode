@@ -1,0 +1,10 @@
+{
+  "name": "Online Bookstore & Admin Dashboard",
+  "description": "An end-to-end system covering product catalog, inventory management, order lifecycle, and administrative operations.",
+  "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
+  "stack": ["NestJS", "NextJS", "TypeScript", "Tailwind", "Drizzle"],
+  "firstLink": "https://next-faibook.vercel.app",
+  "firstLinkTitle": "View Storefront",
+  "secondLink": "https://next-admin-faibook.vercel.app",
+  "secondLinkTitle": "View Admin Dashboard"
+}

@@ -1,17 +1,19 @@
 type TitleProps = {
   text1: string;
   text2: string;
+  subtitle?: string;
 };
 
-export function Title({ text1, text2 }: TitleProps) {
+export function Title({ text1, text2, subtitle }: TitleProps) {
   return (
-    <div>
+    <div className="flex flex-col gap-1">
       <p className="text-2xl font-bold">
         <span className="text-shadow-accent-foreground dark:text-[#ff5b35]">
           {text1}
         </span>{" "}
         {text2}
       </p>
+      <p className="text-sm text-muted-foreground">{subtitle}</p>
     </div>
   );
 }

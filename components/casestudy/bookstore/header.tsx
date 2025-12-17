@@ -5,12 +5,11 @@ import { ThemeMenuToggle } from "@/components/theme-menu-toggle";
 import Link from "next/link";
 
 const navLinks = [
-  // { label: "Hero", href: "#hero" },
-  // { label: "Project Brief", href: "#brief" },
   { label: "Home", href: "#" },
   { label: "Scope", href: "#scope-constraints" },
   { label: "Decisions", href: "#engineering-decisions" },
   { label: "Stack", href: "#stack" },
+  { label: "Improvements", href: "#improvements" },
 ];
 const appName = process.env.PUBLIC_NEXT_APP_NAME || "Faidancode";
 

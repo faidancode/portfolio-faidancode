@@ -1,28 +1,28 @@
 export type Language = "en" | "id";
 
-export type ProjectSection =
+export type CaseStudySection =
+  | "overview"
   | "scope-constraints"
   | "engineering-decisions"
   | "tech-stack"
   | "what-to-improve";
 
-export async function getProjectData<
+export async function getCaseStudyData<
   T = unknown
 >(
-  project: string,
-  section: ProjectSection,
+  caseStudy: string,
+  section: CaseStudySection,
   lang: Language
 ): Promise<T> {
   try {
     const data = await import(
-      `@/data/projects/${project}/${section}-${lang}.json`
+      `@/data/casestudy/${caseStudy}/${section}-${lang}.json`
     );
-    console.log({data});
 
     return data.default as T;
   } catch (error) {
     throw new Error(
-      `Project data not found: ${project}/${section}-${lang}.json`
+      `Case study data not found: ${caseStudy}/${section}-${lang}.json`
     );
   }
 }

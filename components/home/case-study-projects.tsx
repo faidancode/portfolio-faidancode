@@ -1,32 +1,24 @@
 "use client";
 
+import { CaseStudyData } from "@/lib/types/case-study";
 import Image from "next/image";
 
 import Link from "next/link";
-
-type CaseStudy = {
-  name: string;
-  description: string;
-  image: string;
-  url: string;
-  stack: string[];
-};
+import { Title } from "../title";
 
 interface CaseStudyProps {
-  caseStudiesData: CaseStudy[];
+  data: CaseStudyData;
 }
 
-export default function CaseStudyProjects({ caseStudiesData }: CaseStudyProps) {
+export default function CaseStudyProjects({ data }: CaseStudyProps) {
   return (
     <section className="flex flex-col gap-4 w-full p-6" id="caseStudy">
-      <div className="mb-4 flex flex-col gap-1 text-left">
-        <h2 className="text-2xl font-bold text-foreground">Case Studies</h2>
-        <p className="text-sm text-muted-foreground">
-          Realistic, end-to-end projects showcasing my full-stack approach.
-        </p>
+      <div className="flex flex-col gap-1">
+        <Title text1={data.title1} text2={data.title2} />
+        <p className="text-sm text-muted-foreground">{data.subtitle}</p>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
-        {caseStudiesData.map((caseStudy) => (
+        {data.data.map((caseStudy) => (
           <Link href={caseStudy.url} key={caseStudy.url}>
             <article
               key={caseStudy.name}
