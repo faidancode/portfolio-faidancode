@@ -1,0 +1,60 @@
+{
+  "title1": "Tech",
+  "title2": "Stack",
+  "subtitle": "Technologies and tools I commonly use to build scalable, production-ready applications.",
+  "groups": [
+    {
+      "group": "Frontend (Web)",
+      "items": [
+        { "name": "React", "logo": "/images/logo/logo_react_js.png" },
+        { "name": "Next.js", "logo": "/images/logo/logo_next.png" },
+        { "name": "Angular", "logo": "/images/logo/logo_angular.png" },
+        { "name": "Vue", "logo": "/images/logo/logo_vue.png" }
+      ]
+    },
+    {
+      "group": "Mobile Development",
+      "items": [
+        {
+          "name": "React Native",
+          "logo": "/images/logo/logo_react_native.png"
+        },
+        { "name": "Capacitor", "logo": "/images/logo/logo_capacitor.png" },
+        {
+          "name": "Android Studio",
+          "logo": "/images/logo/logo_android_studio.png"
+        }
+      ]
+    },
+    {
+      "group": "Backend & API",
+      "items": [
+        { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
+        { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
+        { "name": "Laravel", "logo": "/images/logo/logo_laravel.png" },
+        { "name": "CodeIgniter", "logo": "/images/logo/logo_codeigniter.png" }
+      ]
+    },
+    {
+      "group": "Language & Type Safety",
+      "items": [{ "name": "TypeScript", "logo": "/images/logo/logo_ts.png" }]
+    },
+    {
+      "group": "Styling & UI",
+      "items": [
+        { "name": "Tailwind CSS", "logo": "/images/logo/logo_tailwind.png" },
+        { "name": "Bootstrap", "logo": "/images/logo/logo_bootstrap.png" }
+      ]
+    },
+    {
+      "group": "Data & ORM",
+      "items": [
+        { "name": "Drizzle ORM", "logo": "/images/logo/logo_drizzle.png" }
+      ]
+    },
+    {
+      "group": "Tools & Collaboration",
+      "items": [{ "name": "GitHub", "logo": "/images/logo/logo_github.png" }]
+    }
+  ]
+}

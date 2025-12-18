@@ -11,6 +11,7 @@ import {
 } from "./ui/sheet";
 import { Menu } from "lucide-react";
 import { ThemeMenuToggle } from "./theme-menu-toggle";
+import { LanguageSwitcher } from "./language-switcher";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -57,7 +58,7 @@ export default function Header() {
           </SheetContent>
         </Sheet>
 
-        <span className="font-bold uppercase tracking-wider text-foreground sm:flex-none sm:text-left">
+        <span className="font-bold uppercase tracking-wider text-foreground text-lg sm:flex-none sm:text-left">
           {appName}
         </span>
 
@@ -79,7 +80,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <div className="flex items-center justify-end">
+        <div className="flex items-center justify-end gap-1">
+          <LanguageSwitcher />
           <ThemeMenuToggle />
         </div>
       </div>

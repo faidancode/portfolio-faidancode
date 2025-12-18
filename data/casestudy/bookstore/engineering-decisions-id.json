@@ -1,0 +1,23 @@
+{
+  "title1": "Keputusan",
+  "title2": "Engineering",
+  "subtitle": "Keputusan teknis utama untuk menjaga keamanan, maintainability, dan kesesuaian dengan kebutuhan.",
+  "data": [
+    {
+      "decision": "Strategi Autentikasi Hybrid (Web & Mobile)",
+      "description": "Sistem menggunakan pendekatan autentikasi hybrid untuk menyesuaikan perbedaan lingkungan client. Web menggunakan cookie yang aman dan httpOnly untuk mengurangi risiko XSS serta memanfaatkan pengelolaan kredensial otomatis oleh browser, sementara mobile menggunakan autentikasi berbasis JWT yang disimpan secara aman dan dikirim melalui header Authorization karena lingkungan mobile tidak mengelola cookie secara otomatis."
+    },
+    {
+      "decision": "Idempotency Key pada Proses Order & Pembayaran",
+      "description": "Untuk mencegah pembuatan order ganda dan risiko double payment, operasi write seperti pembuatan order dan inisiasi pembayaran dirancang bersifat idempotent dengan menggunakan idempotency key.Setiap permintaan pembuatan order menyertakan idempotency key unik yang dihasilkan di sisi client,Pendekatan ini melindungi sistem dari retry jaringan, refresh halaman, dan submit ganda dari user."
+    },
+    {
+      "decision": "Validasi di Batas Sistem",
+      "description": "Setiap request yang masuk divalidasi menggunakan Zod untuk memastikan type safety dan mencegah data tidak valid masuk ke domain logic."
+    },
+    {
+      "decision": "Pola Service yang Konsisten",
+      "description": "Setiap modul domain mengikuti struktur service yang konsisten agar kode mudah dibaca, diuji, dan dipelihara dalam jangka panjang."
+    }
+  ]
+}

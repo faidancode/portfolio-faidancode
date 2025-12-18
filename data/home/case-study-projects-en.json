@@ -1,0 +1,14 @@
+{
+  "title1": "Case",
+  "title2": "Studies",
+  "subtitle": "End-to-end Project Case Studies that represent my full-stack approach in building production-ready applications.",
+  "data": [
+    {
+      "name": "Online Bookstore & Admin Dashboard",
+      "description": "An end-to-end system covering product catalog, inventory management, order lifecycle, and administrative operations.",
+      "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
+      "stack": ["NestJS", "NextJS", "TypeScript", "Tailwind", "Drizzle"],
+      "url": "en/casestudy/bookstore"
+    }
+  ]
+}

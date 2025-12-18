@@ -1,0 +1,31 @@
+{
+  "title1": "Peningkatan Jika Sistem",
+  "title2": "Digunakan di Production",
+  "subtitle": "Refleksi dan rencana peningkatan arsitektur untuk penggunaan skala nyata.",
+  "data": [
+    {
+      "item": "Background Job untuk Proses Asinkron",
+      "description": "Memindahkan proses non-kritis seperti pengiriman email, pembuatan invoice, dan webhook ke background job agar API tetap responsif."
+    },
+    {
+      "item": "Redis sebagai Cache Layer",
+      "description": "Menggunakan Redis untuk menyimpan data yang sering diakses seperti katalog produk agar beban database berkurang dan performa meningkat."
+    },
+    {
+      "item": "Message Queue untuk Proses Order",
+      "description": "Menggunakan message queue untuk memisahkan proses order, pembayaran, dan update stok sehingga sistem lebih scalable dan tahan gagal."
+    },
+    {
+      "item": "Integrasi dengan Layanan Pengiriman",
+      "description": "Integrasi dengan pihak ketiga pengiriman agar customer dapat memantau status dan progres pengiriman secara real-time."
+    },
+    {
+      "item": "Observability Terpusat",
+      "description": "Menambahkan logging terstruktur, metrics, dan tracing untuk mempermudah monitoring dan debugging di lingkungan production."
+    },
+    {
+      "item": "Audit Log untuk Aksi Sensitif",
+      "description": "Mencatat aktivitas penting seperti perubahan stok, pembatalan order, dan aksi admin untuk keperluan audit dan keamanan."
+    }
+  ]
+}

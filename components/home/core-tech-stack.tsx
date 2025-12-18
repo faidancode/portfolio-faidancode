@@ -3,46 +3,53 @@
 import Image from "next/image";
 
 import techStack from "@/data/tech-stack.json";
+import { AllTechStackData } from "@/lib/types/all-tech-stack";
+import { Title } from "../title";
 
-type TechStackItem = {
-  name: string;
-  logo: string;
-};
+interface CoreTechStackProps {
+  data: AllTechStackData;
+}
 
-const techStackData = techStack as TechStackItem[];
-
-export function CoreTechStack() {
+export default function CoreTechStack({ data }: CoreTechStackProps) {
   return (
-    <section className="flex flex-col gap-4 w-full p-6 transition dark:bg-zinc-950/40" id="stack">
-      <div className="mb-4 flex flex-col gap-1 text-left">
-        <h2 className="text-2xl font-bold text-foreground">
-          Core Technologies Stack
-        </h2>
-        <p className="text-sm text-muted-foreground">
-          Build consistent, performant experiences with the languages and tools
-          I rely on daily.
+    <section className="flex w-full flex-col gap-6 p-6">
+      {/* Header */}
+      <div className="flex flex-col gap-1">
+        <Title text1={data.title1} text2={data.title2} />
+        <p className="text-sm text-muted-foreground max-w-2xl">
+          {data.subtitle}
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-        {techStackData.map((tech) => (
-          <article
-            key={tech.name}
-            className="flex flex-row items-center gap-2 rounded-lg border border-border bg-white/90 p-2 text-center shadow-sm shadow-black/5 transition hover:-translate-y-0.5 hover:shadow-lg dark:border-white/10 dark:bg-white/5"
-          >
-            <div className="relative flex items-center justify-center rounded-xl bg-muted/10 p-1">
-              <Image
-                src={tech.logo}
-                alt={`${tech.name} logo`}
-                width={48}
-                height={48}
-                className="h-10 w-10 object-contain rounded"
-                priority={tech.name === "Next.js"}
-              />
+
+      {/* Groups */}
+      <div className="flex flex-col gap-3">
+        {data.groups.map((group) => (
+          <div key={group.group} className="flex flex-col gap-2">
+            <h3 className="text-base font-semibold text-muted-foreground">
+              {group.group}
+            </h3>
+
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6">
+              {group.items.map((item) => (
+                <div
+                  key={item.name}
+                  className="flex items-center gap-2 rounded-xl border bg-white p-3 transition hover:shadow-sm dark:border-white/10 dark:bg-white/5"
+                >
+                  <div className="relative h-8 w-8 grayscale transition hover:grayscale-0">
+                    <Image
+                      src={item.logo}
+                      alt={item.name}
+                      fill
+                      className="object-contain"
+                    />
+                  </div>
+                  <span className="text-xs font-medium text-muted-foreground">
+                    {item.name}
+                  </span>
+                </div>
+              ))}
             </div>
-            <p className="text-xs font-semibold uppercase tracking-widest text-muted-foreground sm:text-sm">
-              {tech.name}
-            </p>
-          </article>
+          </div>
         ))}
       </div>
     </section>

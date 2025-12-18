@@ -1,0 +1,23 @@
+{
+  "title1": "Engineering",
+  "title2": "Decisions",
+  "subtitle": "Key technical choices made to balance security, maintainability, and real-world constraints.",
+  "data": [
+    {
+      "decision": "Hybrid Authentication Strategy (Web & Mobile)",
+      "description": "The system uses a hybrid authentication approach to accommodate different client environments. Web clients authenticate via secure, httpOnly cookies to minimize XSS risks and leverage automatic credential handling by the browser, while mobile clients use JWT-based authentication with tokens stored securely and sent through Authorization headers due to the lack of automatic cookie management in mobile environments."
+    },
+    {
+      "decision": "Idempotency Key for Order & Payment Processes",
+      "description": "To prevent duplicate order creation and the risk of double payments, write operations like order creation and payment initiation are designed to be idempotent using an idempotency key. Each order creation request includes a unique idempotency key generated on the client side. This approach protects the system from network retries, page refreshes, and duplicate submissions from users."
+    },
+    {
+      "decision": "Validation at System Boundaries",
+      "description": "All incoming requests are validated using Zod to ensure type safety and prevent invalid data from propagating into the domain layer."
+    },
+    {
+      "decision": "Consistent Service Pattern",
+      "description": "Each domain module follows a consistent service structure to improve readability, testability, and long-term maintainability."
+    }
+  ]
+}

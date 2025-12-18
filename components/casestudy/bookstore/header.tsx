@@ -1,22 +1,22 @@
 "use client";
 
+import { LanguageSwitcher } from "@/components/language-switcher";
 import { ThemeMenuToggle } from "@/components/theme-menu-toggle";
 import Link from "next/link";
 
 const navLinks = [
-  // { label: "Hero", href: "#hero" },
-  // { label: "Project Brief", href: "#brief" },
   { label: "Home", href: "#" },
-  { label: "Tech Stack", href: "#stack" },
-  // { label: "Workflow", href: "#workflow" },
-  // { label: "Lesson Learned", href: "#lessons" },
+  { label: "Scope", href: "#scope-constraints" },
+  { label: "Decisions", href: "#engineering-decisions" },
+  { label: "Stack", href: "#stack" },
+  { label: "Improvements", href: "#improvements" },
 ];
 const appName = process.env.PUBLIC_NEXT_APP_NAME || "Faidancode";
 
-export function BookstoreHeader() {
+export function ProjectHeader() {
   return (
     <header className="sticky top-0 z-50 w-full  bg-white dark:bg-[#0c1026] border-b">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 text-sm uppercase tracking-widest">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-3 text-lg uppercase tracking-widest">
         <Link href="/">
           <span className="font-semibold">{appName}</span>
         </Link>
@@ -31,7 +31,10 @@ export function BookstoreHeader() {
             </a>
           ))}
         </nav>
-        <ThemeMenuToggle />
+        <div className="flex items-center justify-end gap-1">
+          <LanguageSwitcher />
+          <ThemeMenuToggle />
+        </div>
       </div>
     </header>
   );
