@@ -19,6 +19,7 @@
           "name": "React Native",
           "logo": "/images/logo/logo_react_native.png"
         },
+        { "name": "Ionic", "logo": "/images/logo/logo_ionic.png" },
         { "name": "Capacitor", "logo": "/images/logo/logo_capacitor.png" },
         {
           "name": "Android Studio",
@@ -32,7 +33,8 @@
         { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
         { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
         { "name": "Laravel", "logo": "/images/logo/logo_laravel.png" },
-        { "name": "CodeIgniter", "logo": "/images/logo/logo_codeigniter.png" }
+        { "name": "CodeIgniter", "logo": "/images/logo/logo_codeigniter.png" },
+        { "name": "Python", "logo": "/images/logo/logo_python.png" }
       ]
     },
     {

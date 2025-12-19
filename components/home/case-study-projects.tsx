@@ -13,10 +13,7 @@ interface CaseStudyProps {
 export default function CaseStudyProjects({ data }: CaseStudyProps) {
   return (
     <section className="flex flex-col gap-4 w-full p-6" id="caseStudy">
-      <div className="flex flex-col gap-1">
-        <Title text1={data.title1} text2={data.title2} />
-        <p className="text-sm text-muted-foreground">{data.subtitle}</p>
-      </div>
+      <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3">
         {data.data.map((caseStudy) => (
           <Link href={caseStudy.url} key={caseStudy.url}>
@@ -42,7 +39,7 @@ export default function CaseStudyProjects({ data }: CaseStudyProps) {
                 {caseStudy.stack.map((tech) => (
                   <span
                     key={tech}
-                    className="rounded-full bg-muted/20 border px-3 py-1 text-[10px] font-semibold uppercase tracking-wildest text-foreground"
+                    className="rounded-full bg-muted/20 border px-3 py-1 text-[10px] dark:text-orange-500 font-semibold uppercase tracking-wildest text-foreground"
                   >
                     {tech}
                   </span>

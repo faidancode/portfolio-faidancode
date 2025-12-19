@@ -2,9 +2,9 @@
 
 import Image from "next/image";
 
-import techStack from "@/data/tech-stack.json";
 import { AllTechStackData } from "@/lib/types/all-tech-stack";
 import { Title } from "../title";
+import Section from "../section";
 
 interface CoreTechStackProps {
   data: AllTechStackData;
@@ -12,14 +12,8 @@ interface CoreTechStackProps {
 
 export default function CoreTechStack({ data }: CoreTechStackProps) {
   return (
-    <section className="flex w-full flex-col gap-6 p-6">
-      {/* Header */}
-      <div className="flex flex-col gap-1">
-        <Title text1={data.title1} text2={data.title2} />
-        <p className="text-sm text-muted-foreground max-w-2xl">
-          {data.subtitle}
-        </p>
-      </div>
+    <Section id="stack">
+      <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
 
       {/* Groups */}
       <div className="flex flex-col gap-3">
@@ -29,21 +23,22 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
               {group.group}
             </h3>
 
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6">
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-6">
               {group.items.map((item) => (
                 <div
                   key={item.name}
-                  className="flex items-center gap-2 rounded-xl border bg-white p-3 transition hover:shadow-sm dark:border-white/10 dark:bg-white/5"
+                  className="flex items-center gap-2 rounded-lg border bg-white p-2 transition hover:shadow-sm dark:border-white/10 dark:bg-white/5"
                 >
-                  <div className="relative h-8 w-8 grayscale transition hover:grayscale-0">
+                  <div className="relative h-6 w-6 grayscale transition hover:grayscale-0">
                     <Image
                       src={item.logo}
                       alt={item.name}
                       fill
                       className="object-contain"
+                      sizes="12"
                     />
                   </div>
-                  <span className="text-xs font-medium text-muted-foreground">
+                  <span className="text-xs font-medium dark:text-gray-200">
                     {item.name}
                   </span>
                 </div>
@@ -52,6 +47,6 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
           </div>
         ))}
       </div>
-    </section>
+    </Section>
   );
 }

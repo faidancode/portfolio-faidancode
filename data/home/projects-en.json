@@ -1,0 +1,148 @@
+{
+  "title1": "Professional",
+  "title2": "Project Experience",
+  "subtitle": "Projects delivered for clients and employers, showcasing real-world impact, collaboration, and my skills as a Full Stack Programmer across various industries.",
+  "note": "This section highlights selected professional projects. Due to confidentiality and project lifecycle constraints, most projects are presented as summaries without public links.",
+  "data": [
+    {
+      "title": "ERPNext Implementer",
+      "year": "2024–2025",
+      "industry": "E-Commerce (NDA)",
+      "tech": [
+        "ERPNext",
+        "Frappe Framework",
+        "Python",
+        "REST API",
+        "Magento",
+        "React Native"
+      ],
+      "description": [
+        "Implemented and configured ERPNext as the core back-office system for e-commerce operations.",
+        "Developed custom ERPNext modules, client scripts, and server scripts to support business-specific workflows.",
+        "Built and exposed REST APIs from ERPNext to integrate with Magento and mobile applications.",
+        "Ensured data synchronization and system stability across ERP, e-commerce, and mobile platforms."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Construction (NDA)",
+      "year": "2023–2024",
+      "industry": "Construction (NDA)",
+      "tech": ["Laravel", "Vue.js", "React Native", "MySQL", "REST API"],
+      "description": [
+        "Continued development and maintenance of legacy systems for a construction company under NDA.",
+        "Developed and extended backend APIs to support operational and reporting workflows.",
+        "Maintained and enhanced web admin applications built with Laravel and Vue.js.",
+        "Worked on mobile applications using React Native to support field operations and internal users.",
+        "Improved system stability through bug fixes, refactoring, and performance optimizations."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - White-Label App & Online Fashion Retail",
+      "year": "2023–2024",
+      "industry": "White-Label App, Online Fashion Retail",
+      "tech": [
+        "Ionic",
+        "Angular",
+        "Cordova",
+        "PWA",
+        "CodeIgniter",
+        "React",
+        "Laravel",
+        "MySQL",
+        "Google Play Console"
+      ],
+      "description": [
+        "Developed and maintained a white-label mobile application used by multiple online fashion retailers.",
+        "Built and maintained backend APIs and web admin dashboards for order management and store operations.",
+        "Handled multi-platform development including Android apps, PWA, and web-based admin systems.",
+        "Managed mobile app upgrades, deprecated package migrations, and production releases to Google Play Store.",
+        "Maintained code quality and application stability through bug fixing, refactoring, and ongoing improvements."
+      ],
+      "links": [
+        {
+          "title": "Tokomobile",
+          "link": "https://play.google.com/store/apps/developer?id=Tokomobile&hl=in"
+        },
+        {
+          "title": "Ckeystore",
+          "link": "https://ckeystore.com"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Real-Time System",
+      "year": "2023",
+      "industry": "Energy Technology (NDA)",
+      "tech": ["Laravel", "Node.js", "WebSocket", "MySQL"],
+      "description": [
+        "Contributed to R&D and development of a CMS integrated with an Electric Vehicle Charging System (EVCS).",
+        "Developed real-time APIs using WebSocket to enable communication between CMS and charging devices.",
+        "Implemented user controls to start and stop charging sessions via real-time backend integration.",
+        "Researched and validated system architecture prior to production deployment."
+      ]
+    },
+    {
+      "title": "Web / Full Stack Programmer - Logistics",
+      "year": "2023",
+      "industry": "Logistics (NDA)",
+      "tech": ["Laravel", "Vue.js", "MySQL"],
+      "description": [
+        "Maintained and enhanced an internal admin system for logistics operations and transaction management.",
+        "Developed reporting features with spreadsheet export for operational and financial monitoring.",
+        "Refactored existing code and fixed bugs to improve system stability and maintainability."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Online Printing / E-Commerce",
+      "year": "2022",
+      "industry": "Online Printing / E-Commerce",
+      "tech": [
+        "Ionic",
+        "Angular",
+        "Cordova",
+        "Laravel",
+        "GraphQL",
+        "MySQL",
+        "Shipping API"
+      ],
+      "description": [
+        "Developed and maintained mobile applications and CMS for online printing services.",
+        "Built GraphQL APIs using Laravel to support efficient data querying and application data flow.",
+        "Integrated third-party shipping cost calculation APIs (KiriminAja)."
+      ]
+    },
+    {
+      "title": "Web Programmer - Government",
+      "year": "2022",
+      "industry": "Government / Public Sector",
+      "tech": ["Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
+      "description": [
+        "Developed and maintained a government website including landing pages, news, and public information sections.",
+        "Built and customized a CMS to manage content, announcements, and informational pages.",
+        "Maintained existing codebase and fixed bugs to ensure system stability and content reliability."
+      ]
+    },
+    {
+      "title": "Web Programmer - E-Commerce",
+      "year": "2021",
+      "industry": "E-Commerce",
+      "tech": ["Laravel", "Vue.js", "MySQL", "Xendit API"],
+      "description": [
+        "Developed and maintained core features of an e-commerce platform including product catalog, checkout, and order management.",
+        "Integrated third-party payment gateway (Xendit) to support multiple payment methods.",
+        "Collaborated with business stakeholders to implement payment and transaction workflows."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Hospitality / Hotel",
+      "year": "2021",
+      "industry": "Hospitality / Hotel",
+      "tech": ["Ionic", "Angular", "Cordova", "Laravel", "MySQL"],
+      "description": [
+        "Maintained and enhanced a hotel cashier (POS) system supporting daily operational workflows.",
+        "Developed web-based admin features for transaction and data management.",
+        "Improved application stability through bug fixing and feature enhancements."
+      ]
+    }
+  ]
+}

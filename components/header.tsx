@@ -16,6 +16,7 @@ import { LanguageSwitcher } from "./language-switcher";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Stack", href: "#stack" },
+  { label: "Projects", href: "#projects" },
   { label: "Case Study", href: "#caseStudy" },
 ];
 

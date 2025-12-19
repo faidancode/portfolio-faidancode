@@ -5,7 +5,7 @@ import ProjectScopeConstraints from "@/components/casestudy/bookstore/scope-cons
 import { ProjectTechStack } from "@/components/casestudy/bookstore/tech-stack";
 import ProjectWhatToImprove from "@/components/casestudy/bookstore/what-to-improve";
 import { Language } from "@/lib/get-home-data";
-import { getCaseStudyData } from "@/lib/get-project-data";
+import { getCaseStudyData } from "@/lib/get-casestudy-data";
 import { CaseStudyOverviewData } from "@/lib/types/case-study-overview";
 import { EngineeringDecisionData } from "@/lib/types/engineering-decisions";
 import { ProjectTechStacksData } from "@/lib/types/project-tech-stack";
