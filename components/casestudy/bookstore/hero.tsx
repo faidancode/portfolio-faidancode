@@ -22,17 +22,17 @@ export function ProjectHero({ data }: HeroProps) {
           </h1>
         </div>
         <p className="text-xl">{data.description}</p>
-        <div className="flex flex-wrap justify-center gap-2 text-xs uppercase text-foreground">
+        <div className="flex flex-wrap justify-center gap-1 text-xs uppercase text-foreground">
           {data.stack.map((item) => (
             <span
               key={item}
-              className="rounded-full border bg-white px-2 py-1 dark:border-white/10 dark:bg-white/5"
+              className="rounded-full border bg-white px-2 py-1 dark:border-white/10 dark:bg-white/5 text-xs"
             >
               {item}
             </span>
           ))}
         </div>
-        <div className="flex flex-wrap justify-center gap-3">
+        <div className="flex flex-wrap justify-center gap-3 mt-4">
           <Button asChild size="lg">
             <a href={data.firstLink} target="_blank" rel="noopener noreferrer">
               {data.firstLinkTitle}

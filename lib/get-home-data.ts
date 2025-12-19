@@ -3,6 +3,7 @@ export type Language = "en" | "id";
 export type HomeSection =
   | "hero"
   | "core-tech-stack"
+  | "projects"
   | "case-study-projects";
 
 export async function getHomeData<

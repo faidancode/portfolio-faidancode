@@ -1,0 +1,148 @@
+{
+  "title1": "Pengalaman Proyek",
+  "title2": "Profesional",
+  "subtitle": "Proyek yang telah saya kerjakan untuk klien dan perusahaan, menunjukkan dampak nyata, kerja sama tim, serta kemampuan saya sebagai Full Stack Programmer di berbagai industri.",
+  "note": "Bagian ini menampilkan proyek profesional terpilih. Dengan mempertimbangkan kerahasiaan dan siklus hidup proyek, sebagian besar proyek disajikan dalam bentuk ringkasan tanpa tautan publik.",
+  "data": [
+    {
+      "title": "Implementer ERPNext",
+      "year": "2024–2025",
+      "industry": "E-Commerce (NDA)",
+      "tech": [
+        "ERPNext",
+        "Frappe Framework",
+        "Python",
+        "REST API",
+        "Magento",
+        "React Native"
+      ],
+      "description": [
+        "Mengimplementasikan dan mengonfigurasi ERPNext sebagai sistem back-office inti untuk operasi e-commerce.",
+        "Mengembangkan modul ERPNext kustom, skrip klien, dan skrip server untuk mendukung alur kerja bisnis spesifik.",
+        "Membangun dan menyediakan REST API dari ERPNext untuk integrasi dengan Magento dan aplikasi mobile.",
+        "Menjamin sinkronisasi data dan stabilitas sistem antara ERP, e-commerce, dan platform mobile."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Construction (NDA)",
+      "year": "2024",
+      "industry": "Construction (NDA)",
+      "tech": ["Laravel", "Vue.js", "React Native", "MySQL", "REST API"],
+      "description": [
+        "Melanjutkan pengembangan dan pemeliharaan sistem legacy untuk perusahaan konstruksi dengan ketentuan NDA.",
+        "Mengembangkan dan memperluas backend API untuk mendukung alur operasional dan pelaporan.",
+        "Memelihara serta mengembangkan aplikasi web admin menggunakan Laravel dan Vue.js.",
+        "Mengembangkan dan memelihara aplikasi mobile berbasis React Native untuk mendukung operasional lapangan dan kebutuhan internal.",
+        "Meningkatkan stabilitas sistem melalui perbaikan bug, refactoring kode, dan optimasi performa."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - White-Label App & Online Fashion Retail",
+      "year": "2023–2024",
+      "industry": "White-Label App, Online Fashion Retail",
+      "tech": [
+        "Ionic",
+        "Angular",
+        "Cordova",
+        "PWA",
+        "CodeIgniter",
+        "React",
+        "Laravel",
+        "MySQL",
+        "Google Play Console"
+      ],
+      "description": [
+        "Mengembangkan dan memelihara aplikasi mobile white-label yang digunakan oleh beberapa brand fashion online.",
+        "Membangun dan memelihara backend API serta dashboard web admin untuk manajemen pesanan dan operasional toko.",
+        "Menangani pengembangan multi-platform termasuk aplikasi Android, PWA, dan sistem web admin.",
+        "Mengelola upgrade aplikasi mobile, migrasi paket deprecated, serta rilis aplikasi ke Google Play Store.",
+        "Menjaga kualitas dan stabilitas aplikasi melalui perbaikan bug, refactoring, dan peningkatan berkelanjutan."
+      ],
+      "links": [
+        {
+          "title": "Tokomobile",
+          "link": "https://play.google.com/store/apps/developer?id=Tokomobile&hl=in"
+        },
+        {
+          "title": "Ckeystore",
+          "link": "https://ckeystore.com"
+        }
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Sistem Real-Time",
+      "year": "2023",
+      "industry": "Teknologi Energi (NDA)",
+      "tech": ["Laravel", "Node.js", "WebSocket", "MySQL"],
+      "description": [
+        "Berperan dalam R&D dan pengembangan CMS yang terintegrasi dengan Sistem Pengisian Kendaraan Listrik (EVCS).",
+        "Mengembangkan API real-time menggunakan WebSocket untuk komunikasi antara CMS dan perangkat pengisian.",
+        "Mengimplementasikan kontrol pengguna untuk memulai dan menghentikan sesi pengisian melalui integrasi backend real-time.",
+        "Melakukan riset dan validasi arsitektur sistem sebelum deployment ke produksi."
+      ]
+    },
+    {
+      "title": "Web / Full Stack Programmer - Logistik",
+      "year": "2023",
+      "industry": "Logistik (NDA)",
+      "tech": ["Laravel", "Vue.js", "MySQL"],
+      "description": [
+        "Memelihara dan mengembangkan sistem admin internal untuk operasi dan manajemen transaksi logistik.",
+        "Mengembangkan fitur pelaporan dengan ekspor spreadsheet untuk monitoring operasional dan keuangan.",
+        "Melakukan refactoring kode dan perbaikan bug untuk meningkatkan stabilitas dan maintainability sistem."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Percetakan Online / E-Commerce",
+      "year": "2022",
+      "industry": "Percetakan Online / E-Commerce",
+      "tech": [
+        "Ionic",
+        "Angular",
+        "Cordova",
+        "Laravel",
+        "GraphQL",
+        "MySQL",
+        "Shipping API"
+      ],
+      "description": [
+        "Mengembangkan dan memelihara aplikasi mobile dan CMS untuk layanan percetakan online.",
+        "Membangun API GraphQL menggunakan Laravel untuk mendukung query data yang efisien dan aliran data aplikasi.",
+        "Mengintegrasikan API perhitungan biaya pengiriman dari pihak ketiga (KiriminAja)."
+      ]
+    },
+    {
+      "title": "Web Programmer - Pemerintahan",
+      "year": "2022",
+      "industry": "Pemerintahan / Sektor Publik",
+      "tech": ["Laravel", "MySQL", "HTML", "CSS", "JavaScript"],
+      "description": [
+        "Mengembangkan dan memelihara website pemerintahan yang mencakup landing page, halaman berita, dan informasi publik.",
+        "Membangun dan menyesuaikan CMS untuk pengelolaan konten, pengumuman, dan halaman informasi.",
+        "Memelihara kode yang sudah ada serta memperbaiki bug untuk memastikan stabilitas dan keandalan sistem."
+      ]
+    },
+    {
+      "title": "Web Programmer - E-Commerce",
+      "year": "2021",
+      "industry": "E-Commerce",
+      "tech": ["Laravel", "Vue.js", "MySQL", "Xendit API"],
+      "description": [
+        "Mengembangkan dan memelihara fitur inti platform e-commerce seperti katalog produk, checkout, dan manajemen pesanan.",
+        "Mengintegrasikan payment gateway pihak ketiga (Xendit) untuk mendukung berbagai metode pembayaran.",
+        "Berkolaborasi dengan tim bisnis dalam mengimplementasikan alur transaksi dan pembayaran."
+      ]
+    },
+    {
+      "title": "Full Stack Programmer - Perhotelan / Hotel",
+      "year": "2021",
+      "industry": "Perhotelan / Hotel",
+      "tech": ["Ionic", "Angular", "Cordova", "Laravel", "MySQL"],
+      "description": [
+        "Memelihara dan mengembangkan sistem kasir hotel (POS) yang mendukung alur operasional harian.",
+        "Mengembangkan fitur admin berbasis web untuk manajemen transaksi dan data.",
+        "Meningkatkan stabilitas aplikasi melalui perbaikan bug dan penambahan fitur."
+      ]
+    }
+  ]
+}

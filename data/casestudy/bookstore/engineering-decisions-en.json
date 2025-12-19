@@ -16,8 +16,16 @@
       "description": "All incoming requests are validated using Zod to ensure type safety and prevent invalid data from propagating into the domain layer."
     },
     {
-      "decision": "Consistent Service Pattern",
-      "description": "Each domain module follows a consistent service structure to improve readability, testability, and long-term maintainability."
+      "decision": "API Rate Limiting for Abuse Prevention",
+      "description": "Rate limiting is applied at the API layer to protect critical endpoints from abuse, brute-force attempts, and traffic spikes. This ensures system stability and fair resource usage, especially on authentication and order-related endpoints."
+    },
+    {
+      "decision": "Server Actions for Data Mutations",
+      "description": "Server Actions are used for form submissions and mutations to reduce API boilerplate, improve type safety, and ensure mutations execute securely on the server."
+    },
+    {
+      "decision": "Server Actions for Data Mutations",
+      "description": "Server Actions are used for form submissions and mutations to reduce API boilerplate, improve type safety, and ensure mutations execute securely on the server."
     }
   ]
 }

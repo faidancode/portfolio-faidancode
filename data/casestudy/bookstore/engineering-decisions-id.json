@@ -16,8 +16,16 @@
       "description": "Setiap request yang masuk divalidasi menggunakan Zod untuk memastikan type safety dan mencegah data tidak valid masuk ke domain logic."
     },
     {
-      "decision": "Pola Service yang Konsisten",
-      "description": "Setiap modul domain mengikuti struktur service yang konsisten agar kode mudah dibaca, diuji, dan dipelihara dalam jangka panjang."
+      "decision": "API Rate Limiting untuk Pencegahan Abuse",
+      "description": "Rate limiting diterapkan pada layer API untuk melindungi endpoint penting dari penyalahgunaan, percobaan brute-force, dan lonjakan trafik. Pendekatan ini menjaga stabilitas sistem serta penggunaan resource yang adil, khususnya pada endpoint autentikasi dan pemesanan."
+    },
+    {
+      "decision": "Server Actions untuk Mutasi Data",
+      "description": "Server Actions digunakan untuk menangani submit form dan operasi mutasi data agar logika perubahan data tetap berjalan di sisi server, mengurangi boilerplate API, meningkatkan keamanan, serta menjaga konsistensi tipe antara frontend dan backend."
+    },
+    {
+      "decision": "Strategi Hybrid Data Fetching",
+      "description": "Aplikasi mengombinasikan pengambilan data di Server Components untuk initial render dengan React Query di client untuk data yang bersifat interaktif atau sering berubah, sehingga performa dan pengalaman pengguna tetap seimbang."
     }
   ]
 }
