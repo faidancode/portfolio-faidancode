@@ -1,7 +1,7 @@
 {
   "title1": "Professional",
   "title2": "Project Experience",
-  "subtitle": "Projects delivered for clients and employers, showcasing real-world impact, collaboration, and my skills as a Full Stack Programmer across various industries.",
+  "subtitle": "Projects delivered for clients and employers, showcasing real-world impact, collaboration, and my skills as a Full-Stack Engineer across various industries.",
   "note": "This section highlights selected professional projects. Due to confidentiality and project lifecycle constraints, most projects are presented as summaries without public links.",
   "data": [
     {
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Construction (NDA)",
+      "title": "Full-Stack Programmer - Construction (NDA)",
       "year": "2023–2024",
       "industry": "Construction (NDA)",
       "tech": ["Laravel", "Vue.js", "React Native", "MySQL", "REST API"],
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - White-Label App & Online Fashion Retail",
+      "title": "Full-Stack Programmer - White-Label App & Online Fashion Retail",
       "year": "2023–2024",
       "industry": "White-Label App, Online Fashion Retail",
       "tech": [
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Real-Time System",
+      "title": "Full-Stack Programmer - Real-Time System",
       "year": "2023",
       "industry": "Energy Technology (NDA)",
       "tech": ["Laravel", "Node.js", "WebSocket", "MySQL"],
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "title": "Web / Full Stack Programmer - Logistics",
+      "title": "Web / Full-Stack Programmer - Logistics",
       "year": "2023",
       "industry": "Logistics (NDA)",
       "tech": ["Laravel", "Vue.js", "MySQL"],
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Online Printing / E-Commerce",
+      "title": "Full-Stack Programmer - Online Printing / E-Commerce",
       "year": "2022",
       "industry": "Online Printing / E-Commerce",
       "tech": [
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Hospitality / Hotel",
+      "title": "Full-Stack Programmer - Hospitality / Hotel",
       "year": "2021",
       "industry": "Hospitality / Hotel",
       "tech": ["Ionic", "Angular", "Cordova", "Laravel", "MySQL"],

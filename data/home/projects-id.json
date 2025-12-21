@@ -1,7 +1,7 @@
 {
   "title1": "Pengalaman Proyek",
   "title2": "Profesional",
-  "subtitle": "Proyek yang telah saya kerjakan untuk klien dan perusahaan, menunjukkan dampak nyata, kerja sama tim, serta kemampuan saya sebagai Full Stack Programmer di berbagai industri.",
+  "subtitle": "Proyek yang telah saya kerjakan untuk klien dan perusahaan, menunjukkan dampak nyata, kerja sama tim, serta kemampuan saya sebagai Full-Stack Engineer di berbagai industri.",
   "note": "Bagian ini menampilkan proyek profesional terpilih. Dengan mempertimbangkan kerahasiaan dan siklus hidup proyek, sebagian besar proyek disajikan dalam bentuk ringkasan tanpa tautan publik.",
   "data": [
     {
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Construction (NDA)",
+      "title": "Full-Stack Programmer - Construction (NDA)",
       "year": "2024",
       "industry": "Construction (NDA)",
       "tech": ["Laravel", "Vue.js", "React Native", "MySQL", "REST API"],
@@ -37,7 +37,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - White-Label App & Online Fashion Retail",
+      "title": "Full-Stack Programmer - White-Label App & Online Fashion Retail",
       "year": "2023–2024",
       "industry": "White-Label App, Online Fashion Retail",
       "tech": [
@@ -70,7 +70,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Sistem Real-Time",
+      "title": "Full-Stack Programmer - Sistem Real-Time",
       "year": "2023",
       "industry": "Teknologi Energi (NDA)",
       "tech": ["Laravel", "Node.js", "WebSocket", "MySQL"],
@@ -82,7 +82,7 @@
       ]
     },
     {
-      "title": "Web / Full Stack Programmer - Logistik",
+      "title": "Web / Full-Stack Programmer - Logistik",
       "year": "2023",
       "industry": "Logistik (NDA)",
       "tech": ["Laravel", "Vue.js", "MySQL"],
@@ -93,7 +93,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Percetakan Online / E-Commerce",
+      "title": "Full-Stack Programmer - Percetakan Online / E-Commerce",
       "year": "2022",
       "industry": "Percetakan Online / E-Commerce",
       "tech": [
@@ -134,7 +134,7 @@
       ]
     },
     {
-      "title": "Full Stack Programmer - Perhotelan / Hotel",
+      "title": "Full-Stack Programmer - Perhotelan / Hotel",
       "year": "2021",
       "industry": "Perhotelan / Hotel",
       "tech": ["Ionic", "Angular", "Cordova", "Laravel", "MySQL"],
