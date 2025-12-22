@@ -26,7 +26,7 @@ export function ProjectHero({ data }: HeroProps) {
           {data.stack.map((item) => (
             <span
               key={item}
-              className="rounded-full border bg-white px-2 py-1 dark:border-white/10 dark:bg-white/5 text-xs"
+              className="rounded-md bg-gray-50 border border-gray-300 px-3 py-1 dark:border-white/10 dark:bg-white/5 dark:text-orange-500 text-xs"
             >
               {item}
             </span>

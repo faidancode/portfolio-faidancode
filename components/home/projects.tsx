@@ -14,7 +14,7 @@ export default function Projects({ data }: ProjectsProps) {
   return (
     <Section id="projects">
       <Title text1={data.title1} text2={data.title2} subtitle={data.subtitle} />
-      <div className="bg-orange-200 text-orange-800 rounded-lg p-4 text-sm">
+      <div className="bg-green-100 text-green-800 border border-green-200 rounded-lg p-4 text-sm">
         {data.note}
       </div>
       <div className="grid gap-6 md:grid-cols-2">

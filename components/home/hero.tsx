@@ -8,7 +8,7 @@ interface HeroProps {
 export function Hero({ data }: HeroProps) {
   return (
     <section
-      className="flex max-w-5xl flex-col gap-6 p-6 md:flex-row md:items-center"
+      className="flex max-w-5xl flex-col gap-6 px-6 py-14 md:flex-row md:items-center"
       id="Hero"
     >
       <div className="flex-1 space-y-4 text-center md:text-left">

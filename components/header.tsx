@@ -50,7 +50,7 @@ export default function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setSheetOpen(false)}
-                  className="text-sm font-semibold uppercase tracking-[0.4em] text-muted-foreground transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="text-sm font-semibold uppercase tracking-[0.4em] text-muted-foreground  transition hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {link.label}
                 </Link>
@@ -67,12 +67,12 @@ export default function Header() {
           aria-label="Primary navigation"
           className="hidden flex-1 justify-center sm:flex"
         >
-          <ul className="flex items-center justify-center gap-3 text-[0.65rem] font-semibold uppercase tracking-[0.4em] text-muted-foreground transition-colors sm:gap-6 sm:text-[0.75rem]">
+          <ul className="flex items-center justify-center gap-3 font-semibold uppercase  tracking-widest text-muted-foreground transition-colors sm:gap-6 sm:text-[0.75rem]">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="transition-colors hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="transition-colors text-sm dark:text-orange-600 dark:hover:text-orange-300 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {link.label}
                 </Link>

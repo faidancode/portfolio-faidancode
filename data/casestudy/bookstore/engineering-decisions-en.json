@@ -24,8 +24,8 @@
       "description": "Server Actions are used for form submissions and mutations to reduce API boilerplate, improve type safety, and ensure mutations execute securely on the server."
     },
     {
-      "decision": "Server Actions for Data Mutations",
-      "description": "Server Actions are used for form submissions and mutations to reduce API boilerplate, improve type safety, and ensure mutations execute securely on the server."
+      "decision": "Hybrid Data Fetching Strategy",
+      "description": "The frontend combines Server Component data fetching for initial renders with React Query on the client for interactive, frequently-updated data, balancing performance and user experience."
     }
   ]
 }

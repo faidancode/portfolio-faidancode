@@ -4,6 +4,10 @@
   "subtitle": "Planned improvements and architectural enhancements for a real-world, large-scale deployment.",
   "data": [
     {
+      "item": "Transactional Email & Invoice Generation",
+      "description": "Add transactional email notifications for key user actions such as order confirmation, payment status updates, and password resets, along with automated invoice generation for completed orders."
+    },
+    {
       "item": "Background Jobs for Async Tasks",
       "description": "Move non-critical tasks such as email notifications, invoice generation, and webhook callbacks to background jobs to improve API responsiveness and reliability."
     },

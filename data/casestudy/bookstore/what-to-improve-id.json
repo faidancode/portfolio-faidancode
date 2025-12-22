@@ -1,8 +1,12 @@
 {
   "title1": "Peningkatan Jika Sistem",
   "title2": "Digunakan di Production",
-  "subtitle": "Refleksi dan rencana peningkatan arsitektur untuk penggunaan skala nyata.",
+  "subtitle": "Refleksi dan rencana peningkatan arsitektur agar siap digunakan di lingkungan produksi.",
   "data": [
+    {
+      "item": "Notifikasi Email & Pembuatan Invoice",
+      "description": "Menambahkan notifikasi email transaksional untuk aksi penting pengguna seperti konfirmasi pesanan, pembaruan status pembayaran, dan reset password, serta pembuatan invoice otomatis untuk pesanan yang telah selesai."
+    },
     {
       "item": "Background Job untuk Proses Asinkron",
       "description": "Memindahkan proses non-kritis seperti pengiriman email, pembuatan invoice, dan webhook ke background job agar API tetap responsif."
