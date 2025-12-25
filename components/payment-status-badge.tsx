@@ -1,7 +1,6 @@
-import { OrderStatus } from "@/lib/types/order-flow";
-import { cn } from "@/lib/utils";
-import { orderStatusColor, paymentStatusColor } from "./status-colors";
 import { PaymentStatus } from "@/lib/types/payment-status-mapping.types";
+import { cn } from "@/lib/utils";
+import { paymentStatusColor } from "./status-colors";
 
 type PaymentStatusBagdgeVariant = "table" | "flow";
 

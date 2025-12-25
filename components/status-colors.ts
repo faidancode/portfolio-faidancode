@@ -1,6 +1,6 @@
 // ui/status-colors.ts
 
-import { OrderStatus } from "@/lib/types/order-lifecycle";
+import { OrderStatus } from "@/lib/types/order-staus-transition.types";
 import { PaymentStatus } from "@/lib/types/payment-status-mapping.types";
 
 export const orderStatusColor: Record<OrderStatus, string> = {

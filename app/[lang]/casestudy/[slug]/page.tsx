@@ -12,13 +12,12 @@ import { ProjectTechStacksData } from "@/lib/types/project-tech-stack";
 import { ScopeConstraintsData } from "@/lib/types/scope-constraints";
 import { WhatToImproveData } from "@/lib/types/what-to-improve";
 import { OrderFlowDiagram } from "@/components/casestudy/bookstore/order-flow-diagram";
-import {
-  OrderFlowDiagramData,
-  OrderStatusTransitionData,
-} from "@/lib/types/order-lifecycle";
+
 import { OrderStatusTransitionTable } from "@/components/casestudy/bookstore/order-status-transition-table";
 import { PaymentStatusMappingTable } from "@/components/casestudy/bookstore/payment-status-mapping";
 import { PaymentStatusMappingData } from "@/lib/types/payment-status-mapping.types";
+import { OrderFlowDiagramData } from "@/lib/types/order-flow.types";
+import { OrderStatusTransitionData } from "@/lib/types/order-staus-transition.types";
 
 interface PageProps {
   params: {

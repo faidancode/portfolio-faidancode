@@ -1,6 +1,6 @@
-import { OrderStatus } from "@/lib/types/order-flow";
 import { cn } from "@/lib/utils";
 import { orderStatusColor } from "./status-colors";
+import { OrderStatus } from "@/lib/types/order-staus-transition.types";
 
 type StatusBadgeVariant = "table" | "flow";
 

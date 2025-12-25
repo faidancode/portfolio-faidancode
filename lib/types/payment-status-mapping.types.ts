@@ -1,6 +1,6 @@
 // types/payment-status-mapping.types.ts
 
-import { OrderStatus } from "./order-lifecycle";
+import { OrderStatus } from "./order-staus-transition.types";
 
 export type PaymentStatus = "UNPAID" | "PAID" | "EXPIRED" | "REFUNDED";
 
