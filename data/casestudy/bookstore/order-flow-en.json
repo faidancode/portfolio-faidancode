@@ -1,0 +1,50 @@
+{
+  "title1": "Order",
+  "title2": "Flow",
+  "subtitle": "High-level visualization of how an order progresses through the system, including normal and cancellation paths.",
+  "data": {
+    "states": ["PENDING", "PAID", "DELIVERED", "COMPLETED", "CANCELLED"],
+    "edges": [
+      {
+        "from": "PENDING",
+        "to": "PAID",
+        "action": "PAY",
+        "actor": "CUSTOMER"
+      },
+      {
+        "from": "PAID",
+        "to": "DELIVERED",
+        "action": "SHIP",
+        "actor": "ADMIN"
+      },
+      {
+        "from": "DELIVERED",
+        "to": "COMPLETED",
+        "action": "COMPLETE",
+        "actor": "CUSTOMER"
+      },
+
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "CANCEL",
+        "actor": "CUSTOMER",
+        "dashed": true
+      },
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "EXPIRED",
+        "actor": "SYSTEM",
+        "dashed": true
+      },
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "CANCEL",
+        "actor": "ADMIN",
+        "dashed": true
+      }
+    ]
+  }
+}

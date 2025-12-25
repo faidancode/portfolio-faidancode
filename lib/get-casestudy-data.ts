@@ -4,12 +4,13 @@ export type CaseStudySection =
   | "overview"
   | "scope-constraints"
   | "engineering-decisions"
+  | "order-flow"
+  | "order-status-transitions"
+  | "payment-status-mapping"
   | "tech-stack"
   | "what-to-improve";
 
-export async function getCaseStudyData<
-  T = unknown
->(
+export async function getCaseStudyData<T = unknown>(
   caseStudy: string,
   section: CaseStudySection,
   lang: Language
@@ -26,4 +27,3 @@ export async function getCaseStudyData<
     );
   }
 }
-

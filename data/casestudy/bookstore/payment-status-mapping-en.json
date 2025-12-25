@@ -1,0 +1,27 @@
+{
+  "title1": "Payment",
+  "title2": "Status Mapping",
+  "subtitle": "Mapping between order lifecycle states and their corresponding payment states.",
+  "data": [
+    {
+      "orderStatus": "PENDING",
+      "paymentStatus": "UNPAID",
+      "notes": "Payment initiated but not yet confirmed"
+    },
+    {
+      "orderStatus": "PAID",
+      "paymentStatus": "PAID",
+      "notes": "Confirmed via Midtrans webhook"
+    },
+    {
+      "orderStatus": "CANCELLED",
+      "paymentStatus": "EXPIRED",
+      "notes": "Payment expired after 24 hours"
+    },
+    {
+      "orderStatus": "CANCELLED",
+      "paymentStatus": "UNPAID",
+      "notes": "Cancelled manually by customer or admin"
+    }
+  ]
+}

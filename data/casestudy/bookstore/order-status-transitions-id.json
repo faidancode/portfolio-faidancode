@@ -1,0 +1,63 @@
+{
+  "title1": "Perubahan", 
+  "title2": "Status Pesanan",
+  "subtitle": "Aturan yang menjelaskan perubahan status pesanan dari awal hingga selesai.",
+  "data": [
+    {
+      "currentStatus": "PENDING",
+      "action": "PAY",
+      "actor": "CUSTOMER",
+      "nextStatus": "PAID",
+      "notes": "Pembayaran berhasil dan sudah dikonfirmasi oleh sistem"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CONTINUE_PAYMENT",
+      "actor": "CUSTOMER",
+      "nextStatus": "PENDING",
+      "notes": "Melanjutkan pembayaran dengan token yang sama atau token baru"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "CUSTOMER",
+      "nextStatus": "CANCELLED",
+      "notes": "Pesanan dibatalkan oleh pelanggan"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "SYSTEM",
+      "nextStatus": "CANCELLED",
+      "notes": "Pesanan dibatalkan karena pembayaran melewati batas waktu"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "ADMIN",
+      "nextStatus": "CANCELLED",
+      "notes": "Pesanan dibatalkan oleh admin"
+    },
+    {
+      "currentStatus": "PAID",
+      "action": "SHIP",
+      "actor": "ADMIN",
+      "nextStatus": "DELIVERED",
+      "notes": "Pesanan diproses dan dikirim secara manual oleh admin"
+    },
+    {
+      "currentStatus": "DELIVERED",
+      "action": "COMPLETE",
+      "actor": "CUSTOMER",
+      "nextStatus": "COMPLETED",
+      "notes": "Pelanggan mengonfirmasi bahwa pesanan sudah diterima"
+    },
+    {
+      "currentStatus": "PAID",
+      "action": "CANCEL",
+      "actor": "N/A",
+      "nextStatus": "N/A",
+      "notes": "Pesanan yang sudah dibayar tidak bisa dibatalkan"
+    }
+  ]
+}

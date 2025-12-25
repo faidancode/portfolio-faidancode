@@ -1,0 +1,63 @@
+{
+  "title1": "Order",
+  "title2": "Status Transition",
+  "subtitle": "Explicit rules that define valid state changes across the order lifecycle.",
+  "data": [
+    {
+      "currentStatus": "PENDING",
+      "action": "PAY",
+      "actor": "CUSTOMER",
+      "nextStatus": "PAID",
+      "notes": "Payment confirmed via Midtrans webhook"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CONTINUE_PAYMENT",
+      "actor": "CUSTOMER",
+      "nextStatus": "PENDING",
+      "notes": "Reuse or regenerate Snap token"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "CUSTOMER",
+      "nextStatus": "CANCELLED",
+      "notes": "USER_CANCEL"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "SYSTEM",
+      "nextStatus": "CANCELLED",
+      "notes": "PAYMENT_EXPIRED"
+    },
+    {
+      "currentStatus": "PENDING",
+      "action": "CANCEL",
+      "actor": "ADMIN",
+      "nextStatus": "CANCELLED",
+      "notes": "ADMIN_CANCEL"
+    },
+    {
+      "currentStatus": "PAID",
+      "action": "SHIP",
+      "actor": "ADMIN",
+      "nextStatus": "DELIVERED",
+      "notes": "Manual admin fulfillment flow"
+    },
+    {
+      "currentStatus": "DELIVERED",
+      "action": "COMPLETE",
+      "actor": "CUSTOMER",
+      "nextStatus": "COMPLETED",
+      "notes": "Customer confirms order received"
+    },
+    {
+      "currentStatus": "PAID",
+      "action": "CANCEL",
+      "actor": "N/A",
+      "nextStatus": "N/A",
+      "notes": "Cancellation is not allowed for paid orders"
+    }
+  ]
+}

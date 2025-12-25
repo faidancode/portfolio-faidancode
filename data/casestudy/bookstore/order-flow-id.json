@@ -1,0 +1,50 @@
+{
+  "title1": "Alur",
+  "title2": "Pesanan",
+  "subtitle": "Gambaran umum alur perjalanan pesanan di dalam sistem, termasuk proses normal dan pembatalan.",
+  "data": {
+    "states": ["PENDING", "PAID", "DELIVERED", "COMPLETED", "CANCELLED"],
+    "edges": [
+      {
+        "from": "PENDING",
+        "to": "PAID",
+        "action": "PAY",
+        "actor": "CUSTOMER"
+      },
+      {
+        "from": "PAID",
+        "to": "DELIVERED",
+        "action": "SHIP",
+        "actor": "ADMIN"
+      },
+      {
+        "from": "DELIVERED",
+        "to": "COMPLETED",
+        "action": "COMPLETE",
+        "actor": "CUSTOMER"
+      },
+
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "CANCEL",
+        "actor": "CUSTOMER",
+        "dashed": true
+      },
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "EXPIRED",
+        "actor": "SYSTEM",
+        "dashed": true
+      },
+      {
+        "from": "PENDING",
+        "to": "CANCELLED",
+        "action": "CANCEL",
+        "actor": "ADMIN",
+        "dashed": true
+      }
+    ]
+  }
+}

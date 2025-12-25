@@ -1,0 +1,27 @@
+{
+  "title1": "Pemetaan ",
+  "title2": "Status Pembayaran",
+  "subtitle": "Hubungan antara status pesanan dan kondisi pembayaran yang terjadi.",
+  "data": [
+    {
+      "orderStatus": "PENDING",
+      "paymentStatus": "UNPAID",
+      "notes": "Pembayaran sudah dimulai, tetapi belum ada konfirmasi"
+    },
+    {
+      "orderStatus": "PAID",
+      "paymentStatus": "PAID",
+      "notes": "Pembayaran sudah dikonfirmasi melalui sistem Midtrans"
+    },
+    {
+      "orderStatus": "CANCELLED",
+      "paymentStatus": "EXPIRED",
+      "notes": "Batas waktu pembayaran habis setelah 24 jam"
+    },
+    {
+      "orderStatus": "CANCELLED",
+      "paymentStatus": "UNPAID",
+      "notes": "Pesanan dibatalkan secara manual oleh pelanggan atau admin"
+    }
+  ]
+}

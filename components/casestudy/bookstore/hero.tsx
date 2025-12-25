@@ -55,13 +55,15 @@ export function ProjectHero({ data }: HeroProps) {
       <div className="flex items-center justify-center">
         {/* <div className="absolute inset-0 bg-linear-to-br from-foreground/20 via-transparent to-foreground/10 rounded-3xl"/> */}
         {data.image && (
-          <Image
-            alt="app-screenshoot"
-            width={800}
-            height={500}
-            src={data.image}
-            className="rounded-t-3xl border border-gray-700"
-          />
+          <a href={data.firstLink} target="_blank" rel="noopener noreferrer">
+            <Image
+              alt="app-screenshoot"
+              width={800}
+              height={500}
+              src={data.image}
+              className="rounded-t-3xl border border-gray-700"
+            />
+          </a>
         )}
       </div>
     </section>
