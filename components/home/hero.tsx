@@ -51,7 +51,7 @@ export function Hero({ data }: HeroProps) {
             href="https://github.com/faidancode"
             target="_blank"
             rel="noopener noreferrer"
-            className="group flex items-center gap-3 h-14 px-8 rounded-full border border-slate-200 bg-white/50 backdrop-blur-sm dark:border-white/10 dark:bg-white/5 transition-all hover:border-emerald-600 dark:hover:border-emerald-400"
+            className="group flex items-center gap-3 h-14 px-8 rounded-full border border-slate-200 bg-black backdrop-blur-sm dark:border-white/10 dark:bg-gray-50 transition-all hover:border-emerald-600 dark:hover:border-emerald-400"
           >
             <div className="relative w-6 h-6 transition-transform group-hover:rotate-12">
               {/* Logo untuk Light Mode */}
@@ -59,18 +59,18 @@ export function Hero({ data }: HeroProps) {
                 src="/github.svg"
                 alt="Github"
                 fill
-                className="object-contain dark:hidden"
+                className="object-contain  hidden dark:block"
               />
               {/* Logo untuk Dark Mode */}
               <Image
                 src="/github-white.svg"
                 alt="Github"
                 fill
-                className="object-contain hidden dark:block"
+                className="object-contain  dark:hidden"
               />
             </div>
 
-            <span className="text-sm font-bold uppercase tracking-widest text-slate-700 dark:text-slate-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+            <span className="text-sm font-bold uppercase tracking-widest text-white dark:text-black group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
               Github
             </span>
           </a>

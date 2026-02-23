@@ -81,7 +81,7 @@ export default async function BookstoreLanding({ params }: PageProps) {
   );
 
   return (
-    <div className="min-h-screen text-foreground dark:bg-[#0c1026]">
+    <div className="min-h-screen text-foreground bg-background">
       <ProjectHeader />
       <main className="mx-auto flex max-w-6xl flex-col py-8">
         <ProjectHero data={overView} />
