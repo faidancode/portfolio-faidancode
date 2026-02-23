@@ -1,0 +1,10 @@
+{
+  "name": "Enterprise HRIS & Payroll System",
+  "description": "A robust human resource management system featuring employee lifecycle tracking, automated payroll processing with transactional integrity, and granular RBAC security.",
+  "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/go-hris-dashboard.jpg",
+  "stack": ["Go", "Gin Gonic", "GORM", "PostgreSQL", "Redis", "Kafka"],
+  "firstLink": "https://api-hris.yourdomain.com",
+  "firstLinkTitle": "API Documentation",
+  "secondLink": "https://admin-hris.yourdomain.com",
+  "secondLinkTitle": "View HR Dashboard"
+}

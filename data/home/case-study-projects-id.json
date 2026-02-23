@@ -9,6 +9,13 @@
       "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
       "stack": ["NestJS", "NextJS", "TypeScript", "Tailwind", "Drizzle"],
       "url": "id/casestudy/bookstore"
+    },
+    {
+      "name": "HRIS & Payroll System",
+      "description": "A robust human resource management system",
+      "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/faibook-web-ss_iptmwd.jpg",
+      "stack": ["Go", "Gin Gonic", "GORM", "PostgreSQL", "Redis", "Kafka"],
+      "url": "id/casestudy/hris"
     }
   ]
 }

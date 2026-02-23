@@ -1,0 +1,52 @@
+{
+  "title1": "Teknologi",
+  "title2": "Inti",
+  "subtitle": "Kumpulan teknologi inti yang dipilih untuk mendukung skalabilitas, kemudahan perawatan, dan pengalaman pengembangan yang baik.",
+  "data": [
+    {
+      "component": "Platform Frontend",
+      "technologies": "Next.js (App Router)",
+      "rationale": "Next.js App Router menyediakan kerangka kerja terpadu untuk routing, layout, server rendering, dan data mutation. Pendekatan ini memungkinkan pembuatan halaman yang SEO-friendly sekaligus menjaga logika UI dan data tetap kohesif."
+    },
+    {
+      "component": "Styling Frontend",
+      "technologies": "Tailwind CSS",
+      "rationale": "Tailwind CSS menerapkan pendekatan utility-first dengan design token yang terpusat, memungkinkan iterasi UI yang cepat sekaligus menjaga konsistensi visual tanpa kompleksitas file CSS kustom yang besar."
+    },
+    {
+      "component": "Component Library",
+      "technologies": "Shadcn/UI",
+      "rationale": "Shadcn/UI dibangun di atas Radix primitives untuk menyediakan komponen yang aksesibel dan composable, memberikan kontrol penuh terhadap styling tanpa mengunci proyek pada design system yang kaku."
+    },
+    {
+      "component": "Framework Backend API",
+      "technologies": "Go (Gin Gonic)",
+      "rationale": "Gin dipilih karena performanya yang sangat cepat (high-performance) dan footprint memori yang kecil. Sebagai framework minimalis, Gin memberikan kontrol penuh atas alur request-response, sangat ideal untuk microservices yang membutuhkan throughput tinggi."
+    },
+    {
+      "component": "Database",
+      "technologies": "PostgreSQL",
+      "rationale": "PostgreSQL adalah standar industri untuk integritas data yang ketat. Dukungan terhadap tipe data kompleks (JSONB) dan fitur konkurensi canggih menjadikannya fondasi yang sangat andal untuk mengelola data karyawan dan histori transaksi yang kompleks."
+    },
+    {
+      "component": "ORM / Query Layer",
+      "technologies": "GORM",
+      "rationale": "GORM menyediakan abstraksi yang kaya untuk mempercepat proses pengembangan tanpa mengorbankan fleksibilitas. Dengan fitur auto-migration dan hook support, GORM memudahkan sinkronisasi antara domain model Go dengan skema PostgreSQL."
+    },
+    {
+      "component": "Validasi & Keamanan Tipe",
+      "technologies": "Zod & Go Validator",
+      "rationale": "Memastikan validasi runtime yang ketat di kedua sisi; Zod di frontend untuk keamanan tipe TypeScript, dan Go Validator di backend untuk menjamin integritas skema data sebelum diproses ke database."
+    },
+    {
+      "component": "Manajemen Server State",
+      "technologies": "React Query",
+      "rationale": "Menangani caching server-state dan background refetching secara otomatis, memastikan UI HRIS selalu menyajikan data terbaru tanpa perlu melakukan reload halaman manual."
+    },
+    {
+      "component": "Manajemen UI State Client",
+      "technologies": "Zustand",
+      "rationale": "Menyediakan solusi state management yang minimalis dan efisien untuk state UI lokal, menjaga kompleksitas kode tetap rendah namun tetap sangat responsif."
+    }
+  ]
+}

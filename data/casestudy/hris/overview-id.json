@@ -1,0 +1,10 @@
+{
+  "name": "Sistem HRIS & Payroll Enterprise",
+  "description": "Sistem manajemen sumber daya manusia end-to-end yang mencakup pelacakan siklus hidup karyawan, pemrosesan payroll otomatis dengan integritas transaksional, dan keamanan RBAC yang granular.",
+  "image": "https://res.cloudinary.com/dersjymlc/image/upload/v1765804231/go-hris-dashboard.jpg",
+  "stack": ["Go", "Gin Gonic", "GORM", "PostgreSQL", "Redis", "Kafka"],
+  "firstLink": "https://api-hris.domainanda.com",
+  "firstLinkTitle": "Dokumentasi API",
+  "secondLink": "https://admin-hris.domainanda.com",
+  "secondLinkTitle": "Dashboard Admin HR"
+}

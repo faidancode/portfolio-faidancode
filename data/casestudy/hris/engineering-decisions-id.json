@@ -1,0 +1,31 @@
+{
+  "title1": "Engineering",
+  "title2": "Decisions",
+  "subtitle": "Keputusan teknis utama untuk menyeimbangkan performa, skalabilitas, dan integritas data pada sistem HRIS berbasis Go.",
+  "data": [
+    {
+      "decision": "Clean Architecture dengan Dependency Injection",
+      "description": "Sistem mengikuti prinsip Clean Architecture untuk memisahkan logika bisnis dari infrastruktur. Dependensi diinjeksi secara eksplisit melalui constructor di layer Registry, memungkinkan unit testing yang terisolasi dan fleksibilitas dalam mengganti komponen tanpa merusak core domain."
+    },
+    {
+      "decision": "Transactional Outbox Pattern untuk Eventual Consistency",
+      "description": "Untuk menjamin reliabilitas pengiriman data antar service (seperti sinkronisasi data Employee ke Payroll), sistem menerapkan Transactional Outbox. Event disimpan ke database di dalam transaksi yang sama dengan operasi bisnis menggunakan GORM, mencegah hilangnya data akibat kegagalan broker pesan."
+    },
+    {
+      "decision": "Context-Aware Structured Logging",
+      "description": "Sistem menggunakan Zap Logger yang terintegrasi dengan context Go. Melalui middleware, setiap request membawa Request-ID dan User-ID yang dipropagasikan otomatis ke seluruh layer. Hal ini mempermudah pelacakan (tracing) masalah di lingkungan produksi secara terstruktur (JSON)."
+    },
+    {
+      "decision": "Unified ORM dengan GORM",
+      "description": "GORM dipilih sebagai satu-satunya layer abstraksi database untuk menyederhanakan pemeliharaan kode. Kami memanfaatkan fitur Transaction management, Hooks untuk audit trail, dan Preloading untuk penanganan relasi database secara efisien tanpa menulis boilerplate SQL manual yang berlebihan."
+    },
+    {
+      "decision": "Explicit Error Handling & Mapping",
+      "description": "Sistem meninggalkan pola Exception-based handling dan beralih ke pengecekan error eksplisit khas Go. Kami mengimplementasikan mapper error khusus di layer delivery untuk memastikan error internal (seperti DB constraint) tidak bocor ke client dalam bentuk pesan yang tidak aman."
+    },
+    {
+      "decision": "Boundary Validation & Type Safety",
+      "description": "Validasi dilakukan secara berlapis: 'Playground Validator' pada layer Handler untuk validasi format input, dan validasi logika bisnis pada layer Service untuk memastikan data tetap konsisten sebelum masuk ke layer persistensi."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "title1": "Core",
+  "title2": "Technologies",
+  "subtitle": "A collection of core technologies selected to support scalability, maintainability, and a superior developer experience.",
+  "data": [
+    {
+      "component": "Frontend Platform",
+      "technologies": "Next.js (App Router)",
+      "rationale": "Next.js App Router provides a unified framework for routing, layouts, server rendering, and data mutation. This approach enables SEO-friendly pages while keeping UI logic and data cohesive, reducing boilerplate and enhancing long-term maintainability."
+    },
+    {
+      "component": "Frontend Styling",
+      "technologies": "Tailwind CSS",
+      "rationale": "Tailwind CSS employs a utility-first approach with centralized design tokens, allowing for rapid UI iteration while maintaining visual consistency without the complexity of massive custom CSS files."
+    },
+    {
+      "component": "Component Library",
+      "technologies": "Shadcn/UI",
+      "rationale": "Built on top of Radix primitives, Shadcn/UI provides accessible and composable components without locking the project into a rigid design system, offering full control over styling and behavior."
+    },
+    {
+      "component": "Backend API Framework",
+      "technologies": "Go (Gin Gonic)",
+      "rationale": "Gin was chosen for its exceptional high-performance and small memory footprint. As a minimalist framework, it provides granular control over the request-response lifecycle, making it ideal for high-throughput services."
+    },
+    {
+      "component": "Database",
+      "technologies": "PostgreSQL",
+      "rationale": "PostgreSQL is the industry standard for rigorous data integrity. Its support for complex data types (JSONB) and advanced concurrency features makes it a reliable foundation for managing intricate employee records and transaction histories."
+    },
+    {
+      "component": "ORM / Query Layer",
+      "technologies": "GORM",
+      "rationale": "GORM provides a rich abstraction to accelerate the development process without sacrificing flexibility. With features like auto-migration and hooks, it seamlessly synchronizes Go domain models with the PostgreSQL schema."
+    },
+    {
+      "component": "Validation & Type Safety",
+      "technologies": "Zod & Go Validator",
+      "rationale": "Ensures strict runtime validation at both ends: Zod for TypeScript type safety on the frontend, and Go Validator to guarantee data schema integrity on the backend before processing."
+    },
+    {
+      "component": "Server State Management",
+      "technologies": "React Query",
+      "rationale": "Handles server-state caching, data synchronization, and background refetching, reducing manual data-fetching logic and ensuring the UI stays consistent with the backend state."
+    },
+    {
+      "component": "Client UI State Management",
+      "technologies": "Zustand",
+      "rationale": "Provides a minimal and predictable state management solution for local UI states, keeping complexity low and state logic easy to reason about."
+    }
+  ]
+}

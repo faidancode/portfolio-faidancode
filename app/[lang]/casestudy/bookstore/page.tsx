@@ -27,57 +27,57 @@ interface PageProps {
 }
 
 export default async function BookstoreLanding({ params }: PageProps) {
-  const { lang, slug } = await params;
+  // const { lang, slug } = await params;
+  const { lang } = await params;
   const language: Language = lang === "en" || lang === "id" ? lang : "id";
-  const projectSlug: string = slug;
 
   const overView = await getCaseStudyData<CaseStudyOverviewData>(
-    projectSlug,
+    "bookstore",
     "overview",
-    language
+    language,
   );
 
   const engineeringDecisions = await getCaseStudyData<EngineeringDecisionData>(
-    projectSlug,
+    "bookstore",
     "engineering-decisions",
-    language
+    language,
   );
 
   const orderFlow = await getCaseStudyData<OrderFlowDiagramData>(
-    projectSlug,
+    "bookstore",
     "order-flow",
-    language
+    language,
   );
 
   const orderStatusTransitions =
     await getCaseStudyData<OrderStatusTransitionData>(
-      projectSlug,
+      "bookstore",
       "order-status-transitions",
-      language
+      language,
     );
 
   const paymentStatusMapping = await getCaseStudyData<PaymentStatusMappingData>(
-    projectSlug,
+    "bookstore",
     "payment-status-mapping",
-    language
+    language,
   );
 
   const techStack = await getCaseStudyData<ProjectTechStacksData>(
-    projectSlug,
+    "bookstore",
     "tech-stack",
-    language
+    language,
   );
 
   const scopeConstraints = await getCaseStudyData<ScopeConstraintsData>(
-    projectSlug,
+    "bookstore",
     "scope-constraints",
-    language
+    language,
   );
 
   const improvements = await getCaseStudyData<WhatToImproveData>(
-    projectSlug,
+    "bookstore",
     "what-to-improve",
-    language
+    language,
   );
 
   return (

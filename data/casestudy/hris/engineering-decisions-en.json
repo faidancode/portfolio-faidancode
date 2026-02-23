@@ -1,0 +1,31 @@
+{
+  "title1": "Engineering",
+  "title2": "Decisions",
+  "subtitle": "Key technical choices made to balance performance, scalability, and data integrity in a Go-based HRIS.",
+  "data": [
+    {
+      "decision": "Clean Architecture with Dependency Injection",
+      "description": "The system adheres to Clean Architecture principles to decouple business logic from infrastructure. Dependencies are explicitly injected via constructors in the Registry layer, enabling isolated unit testing and the flexibility to swap components without affecting the core domain."
+    },
+    {
+      "decision": "Transactional Outbox Pattern for Eventual Consistency",
+      "description": "To ensure reliable data propagation between services (e.g., syncing Employee data to Payroll), the system implements the Transactional Outbox pattern. Events are persisted to the database within the same transaction as the business operation, preventing data loss during message broker downtime."
+    },
+    {
+      "decision": "Context-Aware Structured Logging",
+      "description": "The system utilizes Uber's Zap Logger integrated with Go's standard context. Custom middleware ensures that every request carries a unique Request-ID and User-ID, propagated across all layers for seamless structured (JSON) tracing and audit trails."
+    },
+    {
+      "decision": "Unified ORM with GORM",
+      "description": "GORM is used as the sole database abstraction layer to simplify code maintenance. We leverage its transaction management, hooks for audit tracking, and efficient relation preloading to reduce manual SQL boilerplate while maintaining data integrity."
+    },
+    {
+      "decision": "Explicit Error Handling & Mapping",
+      "description": "The system shifts from Exception-based handling to Go’s idiomatic explicit error checking. We implement specialized error mappers in the delivery layer to prevent internal system errors (e.g., DB constraints) from leaking sensitive information to the client."
+    },
+    {
+      "decision": "Boundary Validation & Type Safety",
+      "description": "Validation is applied at multiple layers: the 'Playground Validator' at the Handler level for input format checks, and business-logic validation at the Service level to ensure data consistency before reaching the persistence layer."
+    }
+  ]
+}
