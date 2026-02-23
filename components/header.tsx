@@ -72,7 +72,7 @@ export default function Header() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="transition-colors text-sm dark:text-emerald-600 dark:hover:text-emerald-300 hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+                  className="transition-colors text-sm  dark:hover:text-emerald-400 hover:text-emerald-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                 >
                   {link.label}
                 </Link>

@@ -36,7 +36,7 @@ export default function CaseStudyProjects({ data }: CaseStudyProps) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
-                className="relative h-full flex flex-col rounded-2xl border border-slate-200/50 bg-white p-4 transition-all hover:border-emerald-200 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] dark:border-white/5 dark:bg-slate-900/40"
+                className="relative h-full flex flex-col rounded-2xl border border-slate-300/50 bg-white p-4 transition-all hover:border-emerald-200 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.05)] dark:border-white/5 dark:bg-slate-900/40"
               >
                 {/* Image Container with Zoom Effect */}
                 <div className="relative mb-8 h-64 w-full overflow-hidden rounded-xl">

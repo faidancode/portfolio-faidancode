@@ -48,7 +48,7 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: groupIdx * 0.1 + itemIdx * 0.05 }}
-                    className="group relative flex items-center gap-3 rounded-2xl border border-slate-200/50 bg-white p-3 transition-all hover:border-emerald-500/30 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:border-white/5 dark:bg-slate-900/40 dark:hover:bg-slate-900"
+                    className="group relative flex items-center gap-3 rounded-2xl border border-slate-300/50 bg-white p-3 transition-all hover:border-emerald-500/30 hover:shadow-[0_8px_30px_rgb(0,0,0,0.04)] dark:border-white/5 dark:bg-slate-900/40 dark:hover:bg-slate-900"
                   >
                     {/* Background Soft Glow on Hover */}
                     <div className="absolute inset-0 rounded-2xl bg-emerald-500/2 opacity-0 group-hover:opacity-100 transition-opacity" />

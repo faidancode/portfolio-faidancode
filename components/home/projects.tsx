@@ -44,7 +44,7 @@ export default function Projects({ data }: ProjectsProps) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="group relative flex flex-col rounded-2xl border border-slate-200/60 bg-white p-8 transition-all hover:border-emerald-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] dark:border-white/5 dark:bg-slate-900/50"
+              className="group relative flex flex-col rounded-2xl border border-slate-300/60 bg-white p-8 transition-all hover:border-emerald-200 hover:shadow-[0_20px_50px_rgba(0,0,0,0.04)] dark:border-white/5 dark:bg-slate-900/50"
             >
               <div className="flex items-start justify-between mb-6">
                 <div className="h-12 w-12 rounded-2xl bg-slate-50 dark:bg-white/5 flex items-center justify-center text-slate-400 group-hover:text-emerald-500 transition-colors">
