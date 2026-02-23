@@ -30,10 +30,11 @@
     {
       "group": "Backend & API",
       "items": [
-        { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
-        { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
         { "name": "Laravel", "logo": "/images/logo/logo_laravel.png" },
         { "name": "CodeIgniter", "logo": "/images/logo/logo_codeigniter.png" },
+        { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
+        { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
+        { "name": "Golang", "logo": "/images/logo/logo_golang.png" },
         { "name": "Python", "logo": "/images/logo/logo_python.png" }
       ]
     },
@@ -56,7 +57,10 @@
     },
     {
       "group": "Tools & Collaboration",
-      "items": [{ "name": "GitHub", "logo": "/images/logo/logo_github.png" }]
+      "items": [
+        { "name": "GitHub", "logo": "/images/logo/logo_github.png" },
+        { "name": "Docker", "logo": "/images/logo/logo_docker.png" }
+      ]
     }
   ]
 }

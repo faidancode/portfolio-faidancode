@@ -15,27 +15,32 @@
     {
       "group": "Pengembangan Mobile",
       "items": [
-        { "name": "React Native", "logo": "/images/logo/logo_react_native.png" },
+        {
+          "name": "React Native",
+          "logo": "/images/logo/logo_react_native.png"
+        },
         { "name": "Ionic", "logo": "/images/logo/logo_ionic.png" },
         { "name": "Capacitor", "logo": "/images/logo/logo_capacitor.png" },
-        { "name": "Android Studio", "logo": "/images/logo/logo_android_studio.png" }
+        {
+          "name": "Android Studio",
+          "logo": "/images/logo/logo_android_studio.png"
+        }
       ]
     },
     {
       "group": "Backend & API",
       "items": [
-        { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
-        { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
         { "name": "Laravel", "logo": "/images/logo/logo_laravel.png" },
         { "name": "CodeIgniter", "logo": "/images/logo/logo_codeigniter.png" },
+        { "name": "Node.js", "logo": "/images/logo/logo_node.png" },
+        { "name": "NestJS", "logo": "/images/logo/logo_nest.png" },
+        { "name": "Golang", "logo": "/images/logo/logo_golang.png" },
         { "name": "Python", "logo": "/images/logo/logo_python.png" }
       ]
     },
     {
       "group": "Bahasa & Type Safety",
-      "items": [
-        { "name": "TypeScript", "logo": "/images/logo/logo_ts.png" }
-      ]
+      "items": [{ "name": "TypeScript", "logo": "/images/logo/logo_ts.png" }]
     },
     {
       "group": "Styling & UI",
@@ -53,7 +58,8 @@
     {
       "group": "Tools & Kolaborasi",
       "items": [
-        { "name": "GitHub", "logo": "/images/logo/logo_github.png" }
+        { "name": "GitHub", "logo": "/images/logo/logo_github.png" },
+        { "name": "Docker", "logo": "/images/logo/logo_docker.png" }
       ]
     }
   ]
