@@ -1,5 +1,6 @@
 "use client";
 
+import { GithubButton } from "@/components/github-button";
 import { CaseStudyOverviewData } from "@/lib/types/case-study-overview";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -28,9 +29,19 @@ export function ProjectHero({ data }: HeroProps) {
           transition={{ duration: 0.6 }}
           className="space-y-4"
         >
-          <span className="inline-block px-4 py-1 text-[10px] font-bold uppercase tracking-[0.3em] text-emerald-600 bg-emerald-50 dark:bg-emerald-500/10 dark:text-emerald-400 rounded-full">
+          <span className="inline-block px-4 py-1 text-[11px] font-bold uppercase tracking-[0.2em] text-emerald-600 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-400 dark:border-emerald-300  rounded-full">
             Case Study
           </span>
+          <div className="flex justify-center gap-2">
+            <GithubButton
+              text="Backend (NestJS)"
+              link="https://github.com/faidancode/nest-faibook-api"
+            />
+            <GithubButton
+              text="Frontend (NextJS)"
+              link="https://github.com/faidancode/next-faibook"
+            />
+          </div>
           <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             {data.name}
           </h1>
@@ -40,7 +51,7 @@ export function ProjectHero({ data }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-lg md:text-xl text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-2xl"
+          className="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-light leading-relaxed max-w-2xl"
         >
           {data.description}
         </motion.p>
@@ -55,7 +66,7 @@ export function ProjectHero({ data }: HeroProps) {
           {data.stack.map((item) => (
             <span
               key={item}
-              className="rounded-lg border border-slate-200 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-tight text-slate-600 dark:border-white/5 dark:bg-white/5 dark:text-slate-300"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-tight text-slate-600 dark:border-white/5 dark:bg-white/5 dark:text-slate-400"
             >
               {item}
             </span>
