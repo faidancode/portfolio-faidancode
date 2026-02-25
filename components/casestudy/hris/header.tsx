@@ -26,7 +26,7 @@ export function ProjectHeader() {
           </span>
         </Link>
 
-        <nav className="hidden gap-8 text-[13px] font-medium text-slate-500 sm:flex dark:text-slate-400">
+        <nav className="hidden gap-8 text-[13px] font-medium text-slate-600 sm:flex dark:text-slate-300">
           {navLinks.map((link) => (
             <a
               key={link.href}

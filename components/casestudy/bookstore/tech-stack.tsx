@@ -23,7 +23,7 @@ export function ProjectTechStack({ data }: ProjectTechStackProps) {
               {data.title2}
             </span>
           </h3>
-          <p className="mt-6 text-lg text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 font-light max-w-2xl leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -57,7 +57,7 @@ export function ProjectTechStack({ data }: ProjectTechStackProps) {
                   <h4 className="text-2xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                     {entry.technologies}
                   </h4>
-                  <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 font-light">
+                  <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300 font-light">
                     {entry.rationale}
                   </p>
                 </div>

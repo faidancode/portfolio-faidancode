@@ -24,7 +24,7 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
               {data.title2}
             </span>
           </h2>
-          <p className="text-lg text-slate-500 dark:text-slate-400 font-light leading-relaxed">
+          <p className="text-lg text-slate-600 dark:text-slate-300 font-light leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
           {data.groups.map((group, groupIdx) => (
             <div key={group.group} className="space-y-6">
               <div className="flex items-center gap-4">
-                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500">
+                <h3 className="text-sm font-bold uppercase tracking-[0.2em] text-slate-400 dark:text-slate-600">
                   {group.group}
                 </h3>
                 <div className="h-px flex-1 bg-slate-100 dark:bg-white/5" />
@@ -63,7 +63,7 @@ export default function CoreTechStack({ data }: CoreTechStackProps) {
                       />
                     </div>
 
-                    <span className="text-xs font-semibold tracking-tight text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-400 dark:group-hover:text-white">
+                    <span className="text-xs font-semibold tracking-tight text-slate-600 transition-colors group-hover:text-slate-900 dark:text-slate-300 dark:group-hover:text-white">
                       {item.name}
                     </span>
                   </motion.div>

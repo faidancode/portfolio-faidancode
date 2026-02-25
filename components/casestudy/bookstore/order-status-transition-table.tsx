@@ -21,7 +21,7 @@ export function OrderStatusTransitionTable({ data }: Props) {
             {data.title1}{" "}
             <span className="text-emerald-500">{data.title2}</span>
           </h3>
-          <p className="mt-6 text-lg text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 font-light max-w-2xl leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -69,7 +69,7 @@ export function OrderStatusTransitionTable({ data }: Props) {
                       </span>
                     </td>
                     <td className="p-6">
-                      <div className="flex items-center gap-2 text-slate-500 dark:text-slate-400">
+                      <div className="flex items-center gap-2 text-slate-600 dark:text-slate-300">
                         <UserCircle2
                           size={14}
                           className="text-slate-300 dark:text-slate-600"
@@ -98,7 +98,7 @@ export function OrderStatusTransitionTable({ data }: Props) {
                       </div>
                     </td>
                     <td className="p-6">
-                      <p className="text-sm text-slate-500 dark:text-slate-400 font-light leading-relaxed max-w-xs">
+                      <p className="text-sm text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-xs">
                         {row.notes ?? "-"}
                       </p>
                     </td>

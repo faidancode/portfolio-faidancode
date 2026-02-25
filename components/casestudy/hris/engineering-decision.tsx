@@ -38,7 +38,7 @@ const EngineeringDecisions = ({ data }: EngineeringDecisionsProps) => {
           </h2>
           <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             {data.title1}{" "}
-            <span className="text-slate-400 dark:text-slate-500">
+            <span className="text-slate-400 dark:text-slate-600">
               {data.title2}
             </span>
           </h3>
@@ -86,7 +86,7 @@ const EngineeringDecisions = ({ data }: EngineeringDecisionsProps) => {
                   <h4 className="text-xl font-bold tracking-tight text-slate-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
                     {entry.decision}
                   </h4>
-                  <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400">
+                  <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300">
                     {entry.description}
                   </p>
                 </div>

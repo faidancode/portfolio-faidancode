@@ -27,7 +27,7 @@ export default function ProjectWhatToImprove({ data }: WhatToImproveProps) {
             {data.title1}{" "}
             <span className="text-emerald-500">{data.title2}</span>
           </h2>
-          <p className="mt-6 text-lg text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 font-light max-w-2xl leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function ProjectWhatToImprove({ data }: WhatToImproveProps) {
                         {item.item}
                       </h3>
                     </div>
-                    <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 font-light">
+                    <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300 font-light">
                       {item.description}
                     </p>
                   </div>

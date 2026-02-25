@@ -52,7 +52,10 @@
     {
       "group": "Data & ORM",
       "items": [
-        { "name": "Drizzle ORM", "logo": "/images/logo/logo_drizzle.png" }
+        { "name": "Eloquent", "logo": "/images/logo/logo_laravel.png" },
+        { "name": "Drizzle", "logo": "/images/logo/logo_drizzle.png" },
+        { "name": "SQLC", "logo": "/images/logo/logo_golang.png" },
+        { "name": "GORM", "logo": "/images/logo/logo_golang.png" }
       ]
     },
     {

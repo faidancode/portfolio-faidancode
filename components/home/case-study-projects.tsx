@@ -22,7 +22,7 @@ export default function CaseStudyProjects({ data }: CaseStudyProps) {
               {data.title2}
             </span>
           </h2>
-          <p className="max-w-2xl text-lg text-slate-500 dark:text-slate-400 font-light leading-relaxed">
+          <p className="max-w-2xl text-lg text-slate-600 dark:text-slate-300 font-light leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -69,7 +69,7 @@ export default function CaseStudyProjects({ data }: CaseStudyProps) {
                     {caseStudy.name}
                   </h3>
 
-                  <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 font-light line-clamp-2">
+                  <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300 font-light line-clamp-2">
                     {caseStudy.description}
                   </p>
 

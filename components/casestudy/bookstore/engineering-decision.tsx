@@ -25,12 +25,10 @@ export function ProjectEngineeringDecision({
             </h2>
             <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
               {data.title1}{" "}
-              <span className="text-emerald-500 dark:text-slate-500">
-                {data.title2}
-              </span>
+              <span className="text-emerald-500">{data.title2}</span>
             </h3>
           </div>
-          <p className="text-slate-500 dark:text-slate-400 font-light max-w-xs leading-relaxed border-l-2 border-emerald-500/20 pl-4">
+          <p className="text-slate-600 dark:text-slate-300 font-light max-w-xs leading-relaxed border-l-2 border-emerald-500/20 pl-4">
             {data.subtitle}
           </p>
         </div>
@@ -61,7 +59,7 @@ export function ProjectEngineeringDecision({
                   {entry.decision}
                 </h4>
 
-                <p className="text-base leading-relaxed text-slate-500 dark:text-slate-400 font-light">
+                <p className="text-base leading-relaxed text-slate-600 dark:text-slate-300 font-light">
                   {entry.description}
                 </p>
               </div>

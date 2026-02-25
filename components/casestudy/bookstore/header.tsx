@@ -33,7 +33,7 @@ export function ProjectHeader() {
             <a
               key={link.href}
               href={link.href}
-              className="text-slate-500 transition-colors hover:text-emerald-600 dark:text-slate-400 dark:hover:text-emerald-400"
+              className="text-slate-600 transition-colors hover:text-emerald-600 dark:text-slate-300 dark:hover:text-emerald-400"
             >
               {link.label}
             </a>

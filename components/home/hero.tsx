@@ -30,7 +30,7 @@ export function Hero({ data }: HeroProps) {
           className="w-full md:w-[60%] flex flex-col items-center text-center md:items-start md:text-left space-y-8"
         >
           <div className="w-full space-y-4">
-            <span className="inline-block px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.4em] text-emerald-600 bg-emerald-50 dark:bg-emerald-500/10 dark:text-emerald-400 rounded-full">
+            <span className="inline-block px-4 py-1.5 text-[11px] font-bold uppercase tracking-[0.4em] text-emerald-600 bg-emerald-50 border border-emerald-200 dark:bg-emerald-500/10 dark:text-emerald-400 dark:border-emerald-300  rounded-full">
               Fullstack Developer
             </span>
 
@@ -43,7 +43,7 @@ export function Hero({ data }: HeroProps) {
             </h1>
           </div>
 
-          <p className="max-w-xl text-lg md:text-xl text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+          <p className="max-w-xl text-lg md:text-xl text-slate-600 dark:text-slate-300 leading-relaxed font-light">
             {data.description}
           </p>
 

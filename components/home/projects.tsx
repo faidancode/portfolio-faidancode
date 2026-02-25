@@ -21,7 +21,7 @@ export default function Projects({ data }: ProjectsProps) {
               {data.title2}
             </span>
           </h2>
-          <p className="max-w-2xl text-lg text-slate-500 dark:text-slate-400 font-light leading-relaxed mb-8">
+          <p className="max-w-2xl text-lg text-slate-600 dark:text-slate-300 font-light leading-relaxed mb-8">
             {data.subtitle}
           </p>
 
@@ -80,7 +80,7 @@ export default function Projects({ data }: ProjectsProps) {
                   {project.description.map((desc, i) => (
                     <li
                       key={i}
-                      className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-400 leading-relaxed"
+                      className="flex items-start gap-3 text-sm text-slate-600 dark:text-slate-300 leading-relaxed"
                     >
                       <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-emerald-500" />
                       {desc}

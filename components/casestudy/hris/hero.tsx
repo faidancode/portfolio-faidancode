@@ -24,7 +24,7 @@ export function ProjectHero({ data }: { data: CaseStudyOverviewData }) {
           {data.name}
         </h1>
 
-        <p className="text-lg text-slate-600 dark:text-slate-400 leading-relaxed mb-10">
+        <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-10">
           {data.description}
         </p>
 

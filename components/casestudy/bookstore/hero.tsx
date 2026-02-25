@@ -40,7 +40,7 @@ export function ProjectHero({ data }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1 }}
-          className="text-lg md:text-xl text-slate-500 dark:text-slate-400 font-light leading-relaxed max-w-2xl"
+          className="text-lg md:text-xl text-slate-600 dark:text-slate-300 font-light leading-relaxed max-w-2xl"
         >
           {data.description}
         </motion.p>
@@ -55,7 +55,7 @@ export function ProjectHero({ data }: HeroProps) {
           {data.stack.map((item) => (
             <span
               key={item}
-              className="rounded-lg border border-slate-200 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-tight text-slate-600 dark:border-white/5 dark:bg-white/5 dark:text-slate-400"
+              className="rounded-lg border border-slate-200 bg-white px-3 py-1 text-[11px] font-bold uppercase tracking-tight text-slate-600 dark:border-white/5 dark:bg-white/5 dark:text-slate-300"
             >
               {item}
             </span>

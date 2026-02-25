@@ -31,7 +31,7 @@ export function OrderFlowDiagram({ data }: Props) {
             {title1}{" "}
             <span className="text-emerald-500">{title2}</span>
           </h3>
-          <p className="mt-6 text-lg text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 font-light max-w-2xl leading-relaxed">
             {subtitle}
           </p>
         </div>
@@ -126,7 +126,7 @@ export function OrderFlowDiagram({ data }: Props) {
               size={16}
               className="mt-0.5 text-emerald-600 dark:text-emerald-400"
             />
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed font-light">
+            <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed font-light">
               Diagram ini merepresentasikan <strong>State Machine</strong> dari
               sistem pemesanan. Transisi antar status dikontrol secara ketat
               melalui <em>Service Layer</em> untuk memastikan konsistensi data

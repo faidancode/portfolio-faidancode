@@ -24,11 +24,11 @@ export function PaymentStatusMappingTable({ data }: Props) {
           </h2>
           <h3 className="text-3xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white">
             {data.title1}{" "}
-            <span className="text-slate-400 dark:text-slate-500">
+            <span className="text-emerald-500">
               {data.title2}
             </span>
           </h3>
-          <p className="mt-6 text-lg text-slate-500 dark:text-slate-400 font-light max-w-2xl leading-relaxed">
+          <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 font-light max-w-2xl leading-relaxed">
             {data.subtitle}
           </p>
         </div>
@@ -38,7 +38,7 @@ export function PaymentStatusMappingTable({ data }: Props) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="overflow-hidden rounded-[2.5rem] border border-slate-200 bg-white shadow-sm dark:border-white/5 dark:bg-slate-900/50"
+          className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-white/5 dark:bg-slate-900/50"
         >
           <div className="overflow-x-auto">
             <table className="w-full border-collapse text-left">
@@ -76,7 +76,7 @@ export function PaymentStatusMappingTable({ data }: Props) {
                     </td>
                     <td className="p-6">
                       <div className="flex flex-col gap-1">
-                        <p className="text-sm text-slate-600 dark:text-slate-400 font-light leading-relaxed">
+                        <p className="text-sm text-slate-600 dark:text-slate-300 font-light leading-relaxed">
                           {row.notes ?? "-"}
                         </p>
                       </div>
